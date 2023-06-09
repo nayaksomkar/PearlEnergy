@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
-}
+import 'package:pearl_energy/views/home/home_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,16 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: const Text('Flutte52432654r is fun'),
-        ),
-        body: Container(
-          margin: const EdgeInsets.all(10),
-          child: const Text('e65353fhyuefg'),
-        ),
+      title: 'Fluter Demo',
+      theme: ThemeData(
+
+        primarySwatch: Colors.blue,
       ),
+
+      home: const HomeView(),
     );
   }
 }
