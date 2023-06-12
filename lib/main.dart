@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Fluter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open sans'),
       ),
       home: const HomeView(),
     );

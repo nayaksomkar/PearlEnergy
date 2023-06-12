@@ -5,7 +5,7 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -15,16 +15,22 @@ class NavBar extends StatelessWidget {
             width: 150,
             child: Image.asset('assets/pearenergy_logo.png'),
           ),
-          const Row(
-            mainAxisSize: MainAxisSize.min,
+          Row(
+            mainAxisSize: MainAxisSize.max,
             children: [
-              _NavBarItem(
-                title: 'Episodes',
-              ),
-              SizedBox(
-                width: 60,
-              ),
-              _NavBarItem(title: 'About'),
+              IconButton(
+                  icon: Icon(Icons.phone_outlined),
+                  tooltip: 'Contact Us',
+                  onPressed: () {
+                    pa2();
+                  }),
+                  
+              IconButton(
+                  icon: Icon(Icons.account_circle_outlined),
+                  tooltip: 'Login',
+                  onPressed: () {
+                    pa2();
+                  }),
             ],
           )
         ],
@@ -42,3 +48,8 @@ class _NavBarItem extends StatelessWidget {
     return Container();
   }
 }
+
+void pa2() {
+  print(10);
+}
+
