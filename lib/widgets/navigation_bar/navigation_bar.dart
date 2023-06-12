@@ -18,19 +18,25 @@ class NavBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              IconButton(
-                  icon: Icon(Icons.phone_outlined),
-                  tooltip: 'Contact Us',
-                  onPressed: () {
-                    pa2();
-                  }),
-                  
-              IconButton(
+              DropdownButton(
+                items: const [
+                  DropdownMenuItem(
+                    child: Text('Admin Login'),
+                  ),
+                  DropdownMenuItem(
+                    child: Text('User Login'),
+                  ),
+                ],
+                icon: const Icon(Icons.phone_outlined),
+                onChanged: null,
+                //tooltip: 'Contact Us',
+                //onPressed: () {
+                //  pa2();
+              ),
+              const IconButton(
                   icon: Icon(Icons.account_circle_outlined),
                   tooltip: 'Login',
-                  onPressed: () {
-                    pa2();
-                  }),
+                  onPressed: null),
             ],
           )
         ],
@@ -39,17 +45,6 @@ class NavBar extends StatelessWidget {
   }
 }
 
-class _NavBarItem extends StatelessWidget {
-  final String title;
-  const _NavBarItem({required this.title});
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
 
-void pa2() {
-  print(10);
-}
 
