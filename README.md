@@ -1,4 +1,4 @@
-# pearl_energy
+# Pearl Energy
 ![Getting Started](https://github.com/nayaksomkar/pearl_energy/blob/master/assets/pearenergy_logo.png)
 A new Flutter project.
 
