@@ -15,15 +15,12 @@ class NavBar extends StatelessWidget {
             width: 150,
             child: Image.asset('assets.logo.jpg'),
           ),
+
           const Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _NavBarItem(
-                title: 'Episodes',
-              ),
-              SizedBox(
-                width: 60,
-              ),
+              _NavBarItem(title: 'Episodes',),
+              SizedBox(width: 60,),
               _NavBarItem(title: 'About'),
             ],
           )
