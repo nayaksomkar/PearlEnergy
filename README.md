@@ -1,5 +1,5 @@
 # pearl_energy
-
+![Getting Started](C:\Users\nayak\Downloads\pearl_energy\assets\pearenergy_logo.png)
 A new Flutter project.
 
 ## Getting Started
