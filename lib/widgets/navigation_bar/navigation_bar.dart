@@ -13,7 +13,7 @@ class NavBar extends StatelessWidget {
           SizedBox(
             height: 80,
             width: 150,
-            child: Image.asset('assets.pearenergy_logo.jpg'),
+            child: Image.asset('assets.pearenergy_logo.png'),
           ),
           const Row(
             mainAxisSize: MainAxisSize.min,
