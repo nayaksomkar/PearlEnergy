@@ -80,9 +80,9 @@ flutter:
   fonts:
     - family: Open Sans
       fonts:
-        - asset: assests/fonts/OpenSans_Condensed-ExtraBold.ttf
+        - asset: assests/fonts/OpenSans_ExtraBold.ttf
           weight: 800
-        - asset: assests/fonts/OpenSans_Condensed-Regular.ttf
+        - asset: assests/fonts/OpenSans_Regular.ttf
           weight: 400
 
   #   - family: Trajan Pro
