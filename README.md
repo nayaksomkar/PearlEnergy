@@ -1,5 +1,5 @@
 # Pearl Energy
-![Getting Started](https://github.com/nayaksomkar/PearlEnergy/blob/master/assets/pearenergy_logo.png)
+![](https://github.com/nayaksomkar/PearlEnergy/blob/master/assets/pearenergy_logo.png?raw=true)
 A new Flutter project.
 
 ## Getting Started
