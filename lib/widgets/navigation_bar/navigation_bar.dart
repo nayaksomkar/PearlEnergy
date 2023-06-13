@@ -27,7 +27,7 @@ class NavBar extends StatelessWidget {
                     child: Text('User Login'),
                   ),
                 ],
-                icon: const Icon(Icons.phone_outlined),
+                icon: const Icon(Icons.menu),
                 onChanged: null,
                 //tooltip: 'Contact Us',
                 //onPressed: () {
