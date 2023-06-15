@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../pages/home_page.dart';
+import 'pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Naviation Demo',
-      theme: ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0)),
-      home: null,
+      title: 'Pearl Energy',
+      theme: ThemeData(
+          scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0)),
+      home: const FirstPage(title: 'Pearl Energy'),
     );
   }
 }
