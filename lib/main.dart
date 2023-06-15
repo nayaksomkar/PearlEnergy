@@ -27,16 +27,19 @@ class MyApp extends StatelessWidget {
             // Image set to background of the body
             image: DecorationImage(
                 image: AssetImage('assets/images/BackgroundImage.jpg'),
-                fit: BoxFit.cover),
+                fit: BoxFit.fill),
           ),
-          child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
             // Logo will be shown above the background image
-            child: ImageIcon(
-              AssetImage('assets/images/LogoTransparent.png'),
-              size: 420,
-              color: Colors.amber,
-            ),
-            //child:,
+            children: [
+              ImageIcon(
+                AssetImage('assets/images/LogoTransparent.png'),
+                size: 420,
+                color: Colors.amber,
+              ),
+              ElevatedButton(onPressed: null, child: Text('login to continue'))
+            ],
           ),
         ),
       ),
