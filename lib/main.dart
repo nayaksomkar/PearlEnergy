@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 void main() {
 // main method thats
-// run the RunMyApp
-  runApp(const RunMyApp());
+// run the MyApp
+  runApp(const MyApp());
 }
 
-class RunMyApp extends StatelessWidget {
-  const RunMyApp({super.key});
+class MyApptends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +33,8 @@ class RunMyApp extends StatelessWidget {
               // flutter logo that will shown
               // above the background image
               child: ImageIcon(
-                AssetImage('assets/')
-              ),
+            AssetImage('assets/images/logoTransparent.png'),
+            size: 200,
           )),
         ),
       ),
