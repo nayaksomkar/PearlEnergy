@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../pages/sample_page.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key, required this.title}) : super(key: key);
+class WelcomePage extends StatelessWidget {
+  const WelcomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override

@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
           scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0)),
-      home: const LoginPage(title: 'Pearl Energy'),
+      home: const WelcomePage(title: 'Pearl Energy'),
     );
   }
 }
