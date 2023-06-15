@@ -8,9 +8,9 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
+      // appBar: AppBar(
+      //   title: Text(title),
+      // ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
@@ -19,8 +19,8 @@ class LoginPage extends StatelessWidget {
             }));
           },
           style: ButtonStyle(
-            backgroundColor:
-                MaterialStateProperty.all(const Color.fromARGB(255, 179, 172, 42)),
+            backgroundColor: MaterialStateProperty.all(
+                const Color.fromARGB(255, 179, 172, 42)),
           ),
           child: const Text('Login to Continue'),
         ),
