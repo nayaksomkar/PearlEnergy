@@ -26,14 +26,15 @@ class RunMyApp extends StatelessWidget {
           decoration: BoxDecoration(
             // Image set to background of the body
             image: DecorationImage(
-                image: NetworkImage("https://unsplash.com/photos/75xPHEQBmvA"),
+                image: AssetImage('assets/images/BackgroundImage.jpg'),
                 fit: BoxFit.cover),
           ),
           child: Center(
               // flutter logo that will shown
               // above the background image
-              child: FlutterLogo(
-            size: 200,
+              child: ImageIcon(
+                AssetImage('assets/')
+              ),
           )),
         ),
       ),
