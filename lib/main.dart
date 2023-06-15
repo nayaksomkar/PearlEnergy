@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           child: Center(
             // Logo will be shown above the background image
             child: ImageIcon(
-              AssetImage('assets/images/logo.png'),
+              AssetImage('assets/images/LogoTransparent.png'),
               //size: 200,
             ),
             //child:,
