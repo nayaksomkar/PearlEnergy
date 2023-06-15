@@ -8,16 +8,17 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      body: Center(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(image: AssetImage(r"C:\Users\nayak\Downloads\pearl_energy\assets\images\BackgroundImage.jpg"),
+          fit: BoxFit.cover)
+        ),
         child: ElevatedButton(
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return const HomePage(title: 'HomePage');
-            }
-            ));
+            }));
           },
-          
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(
                 const Color.fromARGB(255, 179, 172, 42)),
