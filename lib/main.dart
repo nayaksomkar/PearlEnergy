@@ -44,13 +44,12 @@ class MyApp extends StatelessWidget {
                     backgroundColor: Colors.amber,
                     foregroundColor: Colors.amber,
                   ),
-                  onPressed:  () {
-   Navigator.push(context, MaterialPageRoute(builder: (context) {
-     return const HomePage(title: 'SecondPage');
-   }));
-},
-
-
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const HomePage(title: 'SecondPage');
+                    }));
+                  },
                   child: const Text(
                     'login to continue',
                   ))
