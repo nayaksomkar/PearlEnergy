@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
           },
           style: ButtonStyle(
             backgroundColor:
-                MaterialStateProperty.all(Color.fromARGB(255, 179, 172, 42)),
+                MaterialStateProperty.all(const Color.fromARGB(255, 179, 172, 42)),
           ),
           child: const Text('Login to Continue'),
         ),
