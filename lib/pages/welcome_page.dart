@@ -9,22 +9,13 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        alignment: Alignment.center,
+        padding: const EdgeInsets.all(32),
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/BackgroundImage.jpg"),
-                fit: BoxFit.cover)),
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const HomePage(title: 'HomePage');
-            }));
-          },
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(
-                const Color.fromARGB(255, 179, 172, 42)),
-          ),
-          child: const Text('Login to Continue'),
-        ),
+          image: AssetImage('assets/images/BackgroundImage.jpg'),
+          fit: BoxFit.cover,
+        )),
       ),
     );
   }
