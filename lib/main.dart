@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/home_page.dart';
 
 void main() {
 // main method thats
@@ -43,7 +44,13 @@ class MyApp extends StatelessWidget {
                     backgroundColor: Colors.amber,
                     foregroundColor: Colors.amber,
                   ),
-                  onPressed: null,
+                  onPressed:  () {
+   Navigator.push(context, MaterialPageRoute(builder: (context) {
+     return const HomePage(title: 'SecondPage');
+   }));
+},
+
+
                   child: const Text(
                     'login to continue',
                   ))
