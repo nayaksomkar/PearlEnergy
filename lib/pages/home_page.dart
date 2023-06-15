@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../pages/sample_page.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key, required this.title}) : super(key: key);
@@ -11,7 +12,11 @@ class FirstPage extends StatelessWidget {
       ),
       body: Center(
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const SecondPage(title: 'SecondPage');
+            }));
+          },
           child: const Text('Next'),
         ),
       ),
