@@ -30,12 +30,13 @@ class MyApp extends StatelessWidget {
                 fit: BoxFit.cover),
           ),
           child: Center(
-              // flutter logo that will shown
-              // above the background image
-              child: ImageIcon(
-            AssetImage('assets/images/logoTransparent.png'),
-            size: 200,
-          )),
+            // Logo will be shown above the background image
+            child: ImageIcon(
+              AssetImage('assets/images/logoTransparent.png'),
+              //size: 200,
+            ),
+            //child:,
+          ),
         ),
       ),
     );

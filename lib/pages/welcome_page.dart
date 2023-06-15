@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../pages/sample_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key, required this.title}) : super(key: key);
