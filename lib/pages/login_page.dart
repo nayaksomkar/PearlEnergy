@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../pages/sample_page.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key, required this.title}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -19,8 +19,8 @@ class FirstPage extends StatelessWidget {
             }));
           },
           style: ButtonStyle(
-            
-            backgroundColor: MaterialStateProperty.all(Colors.black),
+            backgroundColor:
+                MaterialStateProperty.all(Color.fromARGB(255, 179, 172, 42)),
           ),
           child: const Text('Login to Continue'),
         ),
