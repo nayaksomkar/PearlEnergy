@@ -17,19 +17,17 @@ class RunMyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // scaffold with app
-      home: Scaffold(
+      home: const Scaffold(
         // appbat sets the title of the app
-        appBar: AppBar(
-          title: const Text('Set Backgound Image'),
-        ),
         // Decoratedbox which takes the
         // decoration and child property
-        body: const DecoratedBox(
+        body: DecoratedBox(
           // BoxDecoration takes the image
           decoration: BoxDecoration(
             // Image set to background of the body
             image: DecorationImage(
-                image: AssetImage("images/img.png"), fit: BoxFit.cover),
+                image: NetworkImage("https://unsplash.com/photos/75xPHEQBmvA"),
+                fit: BoxFit.cover),
           ),
           child: Center(
               // flutter logo that will shown
