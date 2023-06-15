@@ -10,9 +10,9 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          image: DecorationImage(image: AssetImage(r"C:\Users\nayak\Downloads\pearl_energy\assets\images\BackgroundImage.jpg"),
-          fit: BoxFit.cover)
-        ),
+            image: DecorationImage(
+                image: AssetImage("assets/images/BackgroundImage.jpg"),
+                fit: BoxFit.cover)),
         child: ElevatedButton(
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
