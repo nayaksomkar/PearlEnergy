@@ -14,16 +14,16 @@ class MyApp extends StatelessWidget {
     // materialApp with debugbanner false
     return MaterialApp(
       // theme of the app
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(primarySwatch: Colors.amber),
       debugShowCheckedModeBanner: false,
       // scaffold with app
-      home: const Scaffold(
+      home: Scaffold(
         // appbat sets the title of the app
         // Decoratedbox which takes the
         // decoration and child property
         body: DecoratedBox(
           // BoxDecoration takes the image
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             // Image set to background of the body
             image: DecorationImage(
                 image: AssetImage('assets/images/BackgroundImage.jpg'),
@@ -33,12 +33,20 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             // Logo will be shown above the background image
             children: [
-              ImageIcon(
+              const ImageIcon(
                 AssetImage('assets/images/LogoTransparent.png'),
                 size: 420,
                 color: Colors.amber,
               ),
-              ElevatedButton(onPressed: null, child: Text('login to continue'))
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.amber,
+                    foregroundColor: Colors.amber,
+                  ),
+                  onPressed: null,
+                  child: const Text(
+                    'login to continue',
+                  ))
             ],
           ),
         ),
