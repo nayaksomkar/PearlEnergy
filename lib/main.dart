@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+//import 'pages/home_page.dart';
 
 void main() {
 // main method thats
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         // Decoratedbox which takes the
         // decoration and child property
         body: Container(
+          width: double.infinity,
           // BoxDecoration takes the image
           decoration: const BoxDecoration(
             // Image set to background of the body
@@ -32,14 +33,24 @@ class MyApp extends StatelessWidget {
                 fit: BoxFit.fill),
           ),
           child: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               // flutter logo that will shown
               // above the background image
               children: [
                 FlutterLogo(
-                  size: 200 * 2,
+                  size: 200,
                 ),
                 ElevatedButton(
-                    onPressed: null, child: Text('login to continue'))
+                  onPressed: null,
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                      foregroundColor: MaterialStatePropertyAll(Colors.black)),
+                  child: Text(
+                    'Login to continue',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                )
               ]),
         ),
       ),
