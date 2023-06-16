@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'pages/home_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
 // main method thats
@@ -32,26 +32,32 @@ class MyApp extends StatelessWidget {
                 image: AssetImage("assets/images/BackgroundImage.jpg"),
                 fit: BoxFit.fill),
           ),
-          child: const Column(
+          child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               // flutter logo that will shown
               // above the background image
               children: [
-                FlutterLogo(
-                  size: 200,
+                const Image(
+                  image: AssetImage('assets/images/LogoTransparent.png'),
                 ),
                 ElevatedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(Colors.amber),
                       foregroundColor: MaterialStatePropertyAll(Colors.black)),
-                  child: Text(
+                  child: const Text(
                     'User Login',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const HomePage(title: 'SecondPage');
+                    }));
+                  },
                 ),
-                ElevatedButton(
+                const Text(''),
+                const ElevatedButton(
                   onPressed: null,
                   style: ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(Colors.amber),
@@ -60,7 +66,16 @@ class MyApp extends StatelessWidget {
                     'Admin Login',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                )
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.yellow,
+                    textStyle: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  onPressed: null,
+                  child: const Text('Request for a connection'),
+                ),
               ]),
         ),
       ),
