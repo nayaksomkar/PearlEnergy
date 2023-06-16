@@ -47,7 +47,17 @@ class MyApp extends StatelessWidget {
                       backgroundColor: MaterialStatePropertyAll(Colors.amber),
                       foregroundColor: MaterialStatePropertyAll(Colors.black)),
                   child: Text(
-                    'Login to continue',
+                    'User Login',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: null,
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                      foregroundColor: MaterialStatePropertyAll(Colors.black)),
+                  child: Text(
+                    'Admin Login',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 )
