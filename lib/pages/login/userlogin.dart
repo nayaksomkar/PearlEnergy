@@ -17,6 +17,7 @@ class UserLoginPage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextField(
               decoration: const InputDecoration(labelText: "Enter your number"),
