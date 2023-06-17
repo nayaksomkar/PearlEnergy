@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './adminlogin.dart';
+import 'admin/adminlogin.dart';
 import 'user/userlogin.dart';
 
 
