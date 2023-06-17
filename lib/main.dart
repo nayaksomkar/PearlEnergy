@@ -16,10 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'PearlEnergy',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black,
+        brightness: Brightness.dark,
+        primaryColor: Colors.blueGrey,
         primarySwatch: Colors.amber,
       ),
       home: const LoginOption(title: 'LoginOption'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
