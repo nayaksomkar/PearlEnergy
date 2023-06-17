@@ -18,13 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const FirstPage(title: 'FirstPage'),
+      home: const LoginOption(title: 'LoginOption'),
     );
   }
 }
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key, required this.title}) : super(key: key);
+class LoginOption extends StatelessWidget {
+  const LoginOption({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class FirstPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginOption(title: 'LoginOption');
+                  return const LoginPage(title: 'LoginPage');
                 }));
               },
               child: const Text(
@@ -58,7 +58,7 @@ class FirstPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginOption(title: 'LoginOption');
+                  return const LoginPage(title: 'LoginPage');
                 }));
               },
               child: const Text(
