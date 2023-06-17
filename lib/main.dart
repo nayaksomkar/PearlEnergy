@@ -16,13 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Naviation Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
       ),
       home: const FirstPage(title: 'FirstPage'),
     );
   }
 }
-
 
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key, required this.title}) : super(key: key);
@@ -42,5 +41,3 @@ class FirstPage extends StatelessWidget {
     );
   }
 }
-
-
