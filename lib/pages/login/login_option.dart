@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'adminlogin.dart';
 import 'userlogin.dart';
 
-
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -24,7 +23,7 @@ class LoginOption extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const AdminLoginPage(title: 'LoginPage');
+                  return const AdminLoginPage(title: 'Admin Login');
                 }));
               },
               child: const Text(
