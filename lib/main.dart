@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'pages/home_page.dart';
+import 'pages/login_page.dart';
 
 void main() {
 // main method thats
@@ -31,7 +31,11 @@ class FirstPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const SecondPage(title: 'SecondPage');
+            }));
+          },
           child: const Text('Next'),
         ),
       ),
