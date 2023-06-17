@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/login_option.dart';
+import 'pages/login/login_option.dart';
 
 void main() {
 // main method thats
