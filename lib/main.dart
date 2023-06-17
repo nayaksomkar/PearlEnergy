@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Naviation Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
         primarySwatch: Colors.amber,
       ),
       home: const LoginOption(title: 'LoginOption'),
