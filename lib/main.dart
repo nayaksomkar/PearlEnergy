@@ -30,13 +30,29 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: TextButton(
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const SecondPage(title: 'SecondPage');
-            }));
-          },
-          child: const Text('Next'),
+        child: Column(
+          children: [
+            const Image(
+              image: AssetImage(
+                'assets/images/LogoTransparent.png',
+              ),
+              fit: BoxFit.cover,
+            ),
+            ElevatedButton(
+              style: const ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const SecondPage(title: 'SecondPage');
+                }));
+              },
+              child: const Text(
+                'User Login',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
         ),
       ),
     );
