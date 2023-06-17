@@ -42,7 +42,6 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text('Welcome'),
                     Image(
                       image: AssetImage(
                         'assets/images/LogoTransparent.png',
@@ -52,8 +51,12 @@ class MyApp extends StatelessWidget {
                       width: 300,
                     ),
                   ],
-                )
-              ]),
+                  
+                ),
+                Column(),
+              ],
+              
+              ),
         ),
       ),
     );
