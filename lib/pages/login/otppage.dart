@@ -14,6 +14,7 @@ class OtpPage extends StatelessWidget {
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
+      body: Center(),
     );
   }
 }
