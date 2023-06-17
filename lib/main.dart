@@ -44,7 +44,7 @@ class FirstPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const SecondPage(title: 'SecondPage');
+                  return const LoginOption(title: 'LoginOption');
                 }));
               },
               child: const Text(
@@ -58,7 +58,7 @@ class FirstPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const SecondPage(title: 'SecondPage');
+                  return const LoginOption(title: 'LoginOption');
                 }));
               },
               child: const Text(
