@@ -24,11 +24,11 @@ class LoginOption extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginPage(title: 'LoginPage');
+                  return const AdminLoginPage(title: 'Admin Login');
                 }));
               },
               child: const Text(
-                'User Login',
+                'Admin Login',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
@@ -38,7 +38,7 @@ class LoginOption extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginPage(title: 'LoginPage');
+                  return const UserLoginPage(title: 'User Login');
                 }));
               },
               child: const Text(
