@@ -39,7 +39,7 @@ class UserLoginPage extends StatelessWidget {
                 }));
               },
               child: const Text(
-                'Submit',
+                'Verify',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
