@@ -33,13 +33,16 @@ class MyApp extends StatelessWidget {
                 fit: BoxFit.fill),
           ),
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               // flutter logo that will shown
               // above the background image
               children: [
                 const Image(
-                  image: AssetImage('assets/images/LogoTransparent.png'),
+                  image: AssetImage(
+                    'assets/images/LogoTransparent.png',
+                  ),
+                  fit: BoxFit.cover,
                 ),
                 ElevatedButton(
                   style: const ButtonStyle(
@@ -69,11 +72,11 @@ class MyApp extends StatelessWidget {
                 ),
                 TextButton(
                   style: TextButton.styleFrom(
-                    foregroundColor: Colors.yellow,
+                    foregroundColor: Colors.white,
                     textStyle: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.bold),
+                        fontSize: 10, fontWeight: FontWeight.bold),
                   ),
-                  onPressed: null,
+                  onPressed: () {},
                   child: const Text('Request for a connection'),
                 ),
               ]),
