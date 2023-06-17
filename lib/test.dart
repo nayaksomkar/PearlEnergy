@@ -1,9 +1,9 @@
 Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment = MainAxisAlignment.start,
+              crossAxisAlignment = CrossAxisAlignment.center,
               // flutter logo that will shown
               // above the background image
-              children: [
+              children = [
                 const Image(
                   image: AssetImage(
                     'assets/images/LogoTransparent.png',
