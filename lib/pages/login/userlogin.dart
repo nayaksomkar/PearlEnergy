@@ -21,7 +21,8 @@ class UserLoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextField(
-              decoration: const InputDecoration(labelText: "Enter your number"),
+              decoration: const InputDecoration(
+                  hintText: "Enter your number", border: OutlineInputBorder()),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
