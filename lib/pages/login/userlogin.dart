@@ -26,6 +26,21 @@ class UserLoginPage extends StatelessWidget {
                 FilteringTextInputFormatter.digitsOnly
               ], // Only numbers can be entered
             ),
+            const Text(''),
+            ElevatedButton(
+              style: const ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const UserLoginPage(title: 'User Login');
+                }));
+              },
+              child: const Text(
+                'User Login',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
