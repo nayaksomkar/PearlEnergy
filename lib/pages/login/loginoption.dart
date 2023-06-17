@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'adminlogin.dart';
-import 'userlogin.dart';
+import './adminlogin.dart';
+import 'user/userlogin.dart';
+
+
 
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
