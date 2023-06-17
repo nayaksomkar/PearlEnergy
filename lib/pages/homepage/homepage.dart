@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample/main.dart';
 import '../login/user/otppage.dart';
 
 class HomePage extends StatelessWidget {
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const OtpPage(title: 'OTP');
+                  return const MyApp();
                 }));
               },
               child: const Text(
