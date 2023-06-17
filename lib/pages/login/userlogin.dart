@@ -34,7 +34,7 @@ class UserLoginPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const OtpPage(title: 'User Login');
+                  return const OtpPage(title: 'OTP');
                 }));
               },
               child: const Text(
