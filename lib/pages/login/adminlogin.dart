@@ -12,7 +12,10 @@ class AdminLoginPage extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: () {},
-          child: const Text('Go Back'),
+          child: const Text(
+            'Go back',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );
