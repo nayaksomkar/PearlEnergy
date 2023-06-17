@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sample/pages/login/otpPage.dart';
+
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -33,11 +35,11 @@ class UserLoginPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const UserLoginPage(title: 'User Login');
+                  return const OtpPage(title: 'User Login');
                 }));
               },
               child: const Text(
-                'User Login',
+                'Submit',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
@@ -47,3 +49,6 @@ class UserLoginPage extends StatelessWidget {
     );
   }
 }
+
+
+
