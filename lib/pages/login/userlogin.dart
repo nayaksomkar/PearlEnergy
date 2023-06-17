@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/pages/login/otpPage.dart';
 
-
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -49,6 +48,3 @@ class UserLoginPage extends StatelessWidget {
     );
   }
 }
-
-
-
