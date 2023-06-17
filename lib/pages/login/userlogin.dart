@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -14,12 +15,12 @@ class UserLoginPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: TextButton(
-          onPressed: () {},
-          child: const Text(
-            'Go back',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
+        child: TextField(
+          decoration: const InputDecoration(labelText: "Enter your number"),
+          keyboardType: TextInputType.number,
+          inputFormatters: <TextInputFormatter>[
+            FilteringTextInputFormatter.digitsOnly
+          ], // Only numbers can be entered
         ),
       ),
     );
