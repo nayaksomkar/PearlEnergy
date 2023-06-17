@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../homepage/homepage.dart';
+import '../login/otppage.dart';
 
-class OtpPage extends StatelessWidget {
-  const OtpPage({super.key, required this.title});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key, required this.title});
   final String title;
 
   @override
@@ -36,7 +36,7 @@ class OtpPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const HomePage(title: 'Home Page');
+                  return const OtpPage(title: 'OTP');
                 }));
               },
               child: const Text(
