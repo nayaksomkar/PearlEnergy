@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                 }));
               },
               child: const Text(
-                'Verify',
+                'Logout',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
