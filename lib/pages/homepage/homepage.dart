@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
-import '../login/user/otppage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
