@@ -43,6 +43,7 @@ class WrongUserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
+            const Text(''),
             const Text('Wrong Phone Number'),
           ],
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/pages/login/user/otppage.dart';
 import 'package:sample/pages/login/user/wronguserloginpage.dart';
-
+import '../../../main.dart';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -45,6 +45,7 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
+            const Text(''),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
@@ -59,10 +60,21 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
+            const Text(''),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const MyApp();
+                }));
+              },
+              child: const Text(
+                'Go back',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-

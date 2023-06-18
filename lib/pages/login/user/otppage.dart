@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../homepage/homepage.dart';
+import 'userloginpage.dart';
 
 class OtpPage extends StatelessWidget {
   const OtpPage({super.key, required this.title});
@@ -41,6 +42,18 @@ class OtpPage extends StatelessWidget {
               },
               child: const Text(
                 'Verify',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            const Text(''),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const UserLoginPage(title: 'User Login');
+                }));
+              },
+              child: const Text(
+                'Go back',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
