@@ -6,6 +6,7 @@ void main() {
 // run the MyApp
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'PearlEnergy',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.grey[900],
+        primaryColor: Colors.black,
         primarySwatch: Colors.amber,
       ),
       home: const LoginOption(title: 'LoginOption'),

@@ -16,9 +16,8 @@ class HomePage extends StatelessWidget {
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-      body: Center(
+      body: Container(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ImageSlideshow(
@@ -42,6 +41,22 @@ class HomePage extends StatelessWidget {
                   'assets/images/LogoTransparent.png',
                   fit: BoxFit.cover,
                 ),
+              ],
+            ),
+            const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text('Payments and Bills'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text('a'),
+                    Text('a'),
+                    Text('a'),
+                  ],
+                )
               ],
             ),
             ElevatedButton(
