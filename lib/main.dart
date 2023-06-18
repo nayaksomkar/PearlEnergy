@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'PearlEnergy',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.blueGrey,
+        primaryColor: Colors.grey[900],
         primarySwatch: Colors.amber,
       ),
       home: const LoginOption(title: 'LoginOption'),

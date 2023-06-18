@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'admin/adminloginpage.dart';
 import 'user/userloginpage.dart';
 
-
-
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -17,7 +15,8 @@ class LoginOption extends StatelessWidget {
               image: AssetImage(
                 'assets/images/LogoTransparent.png',
               ),
-              fit: BoxFit.cover,
+              height: 500,
+              width: 500,
             ),
             ElevatedButton(
               style: const ButtonStyle(
