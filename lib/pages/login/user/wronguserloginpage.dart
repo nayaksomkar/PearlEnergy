@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/pages/login/user/otppage.dart';
 
-class UserLoginPage extends StatelessWidget {
-  const UserLoginPage({Key? key, required this.title}) : super(key: key);
+class WrongUserLoginPage extends StatelessWidget {
+  const WrongUserLoginPage({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -43,6 +43,7 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
+            const Text('Wrong Phone Number'),
           ],
         ),
       ),
