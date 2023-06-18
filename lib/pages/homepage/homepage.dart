@@ -31,15 +31,15 @@ class HomePage extends StatelessWidget {
               isLoop: true,
               children: [
                 Image.asset(
-                  'images/sample_image_1.jpg',
+                  'assets/images/BackgroundImage.jpg',
                   fit: BoxFit.cover,
                 ),
                 Image.asset(
-                  'images/sample_image_2.jpg',
+                  'assets/images/LogoTransparent.png',
                   fit: BoxFit.cover,
                 ),
                 Image.asset(
-                  'images/sample_image_3.jpg',
+                  'assets/images/LogoTransparent.png',
                   fit: BoxFit.cover,
                 ),
               ],
