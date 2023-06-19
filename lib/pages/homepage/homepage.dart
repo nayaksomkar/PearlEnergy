@@ -19,58 +19,56 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          //crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              // crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text('Payments and Bills'),
                 Row(
-                  // mainAxisAlignment: MainAxisAlignment.center,
-                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(
-                      //   mainAxisAlignment: MainAxisAlignment.end,
-                      //  crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 100,
+                              size: 20,
                             )),
-                        Text('Volume')
+                        Text('Elemenet_1')
                       ],
                     ),
+                    SizedBox(width: 50),
                     Column(
-                      //   mainAxisAlignment: MainAxisAlignment.end,
-                      //   crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 100,
+                              size: 20,
                             )),
-                        Text('Volume')
+                        Text('Elemenet_1')
                       ],
                     ),
+                    SizedBox(width: 50),
                     Column(
-                      //  mainAxisAlignment: MainAxisAlignment.end,
-                      //  crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 100,
+                              size: 20,
                             )),
-                        Text('Volume')
+                        Text('Elemenet_1')
                       ],
-                    )
+                    ),
                   ],
                 ),
+                Text('Ussage and Consumption'),
+                Text('Manage Account'),
               ],
             ),
             ElevatedButton(
