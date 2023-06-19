@@ -36,22 +36,6 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        IconButton(
-                            onPressed: null,
-                            icon: Icon(
-                              Icons.abc,
-                              size: 50,
-                            )),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text('Elemenet_1')
-                      ],
-                    ),
                     SizedBox(width: 50),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -60,16 +44,16 @@ class HomePage extends StatelessWidget {
                         IconButton(
                             onPressed: null,
                             icon: Icon(
-                              Icons.abc,
+                              Icons.payments_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 25,
                         ),
-                        Text('Elemenet_1')
+                        Text('Payment History')
                       ],
                     ),
-                    SizedBox(width: 50),
+                    SizedBox(width: 100),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,25 +61,28 @@ class HomePage extends StatelessWidget {
                         IconButton(
                             onPressed: null,
                             icon: Icon(
-                              Icons.abc,
+                              Icons.price_check_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 25,
                         ),
-                        Text('Elemenet_1')
+                        Text('Payment Status')
                       ],
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 Text('Ussage and Consumption'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    SizedBox(
+                      width: 30,
+                    ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -109,7 +96,7 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Text('Elemenet_1')
+                        Text('Ussage History')
                       ],
                     ),
                     SizedBox(width: 50),
@@ -126,24 +113,7 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Text('Elemenet_1')
-                      ],
-                    ),
-                    SizedBox(width: 50),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        IconButton(
-                            onPressed: null,
-                            icon: Icon(
-                              Icons.abc,
-                              size: 50,
-                            )),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text('Elemenet_1')
+                        Text('Current Ussage')
                       ],
                     ),
                   ],
