@@ -36,7 +36,6 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(width: 50),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,7 +47,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         SizedBox(
-                          height: 25,
+                          height: 20,
                         ),
                         Text('Payment History')
                       ],
@@ -65,7 +64,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         SizedBox(
-                          height: 25,
+                          height: 20,
                         ),
                         Text('Payment Status')
                       ],
@@ -80,9 +79,6 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      width: 30,
-                    ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -90,16 +86,16 @@ class HomePage extends StatelessWidget {
                         IconButton(
                             onPressed: null,
                             icon: Icon(
-                              Icons.abc,
+                              Icons.history_edu_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
                         Text('Ussage History')
                       ],
                     ),
-                    SizedBox(width: 50),
+                    SizedBox(width: 100),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -107,11 +103,11 @@ class HomePage extends StatelessWidget {
                         IconButton(
                             onPressed: null,
                             icon: Icon(
-                              Icons.abc,
+                              Icons.stacked_bar_chart_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
                         Text('Current Ussage')
                       ],
