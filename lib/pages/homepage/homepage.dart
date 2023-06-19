@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
               children: [
                 const Image(
                   image: AssetImage(
-                    'assets/images/IconTrasparent.png',
+                    'assets/images/IconTransparent.png',
                   ),
                   height: 300,
                   width: 300,
