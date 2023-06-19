@@ -24,7 +24,10 @@ class HomePage extends StatelessWidget {
                   height: 200,
                   width: 200,
                 ),
-                Text('Payments and Bills'),
+                Text(
+                  'Payments and Bills',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -67,7 +70,10 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Text('Ussage and Consumption'),
+                Text(
+                  'Ussage and Consumption',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,7 +116,10 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Text('Manage Account'),
+                Text(
+                  'Manage Account',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -128,7 +137,7 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 20,
                         ),
-                        Text('Manage Account')
+                        Text('Account')
                       ],
                     ),
                     SizedBox(width: 130),
