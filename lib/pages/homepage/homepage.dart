@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 20,
+                              size: 120,
                             )),
                         Text('Elemenet_1')
                       ],
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 20,
+                              size: 120,
                             )),
                         Text('Elemenet_1')
                       ],
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 20,
+                              size: 60,
                             )),
                         Text('Elemenet_1')
                       ],
