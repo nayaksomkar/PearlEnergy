@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 Text('Manage Account'),
                 Row(
