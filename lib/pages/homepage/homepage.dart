@@ -25,6 +25,13 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                const Image(
+                  image: AssetImage(
+                    'assets/images/IconTrasparent.png',
+                  ),
+                  height: 300,
+                  width: 300,
+                ),
                 Text('Payments and Bills'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
