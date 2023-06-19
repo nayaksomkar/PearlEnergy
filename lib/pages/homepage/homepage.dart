@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Column(
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -129,66 +129,40 @@ class HomePage extends StatelessWidget {
                         IconButton(
                             onPressed: null,
                             icon: Icon(
-                              Icons.abc,
+                              Icons.person_2_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
-                        Text('Elemenet_1')
+                        Text('Manage Account')
                       ],
                     ),
-                    SizedBox(width: 50),
+                    SizedBox(width: 130),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return const MyApp();
+                              }));
+                            },
                             icon: Icon(
-                              Icons.abc,
+                              Icons.login_rounded,
                               size: 50,
                             )),
                         SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
-                        Text('Elemenet_1')
-                      ],
-                    ),
-                    SizedBox(width: 50),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        IconButton(
-                            onPressed: null,
-                            icon: Icon(
-                              Icons.abc,
-                              size: 50,
-                            )),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text('Elemenet_1')
+                        Text('Logout')
                       ],
                     ),
                   ],
                 ),
               ],
-            ),
-            ElevatedButton(
-              style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const MyApp();
-                }));
-              },
-              child: const Text(
-                'Logout',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
             ),
           ],
         ),
