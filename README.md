@@ -1,3 +1,3 @@
 # sample
 
-![PearlEnergy Logo](./assets/images/logo.png)
+![PearlEnergy Logo](https://github.com/nayaksomkar/PearlEnergy/blob/master/assets/images/logo.png)
