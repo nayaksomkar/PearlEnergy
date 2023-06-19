@@ -31,44 +31,171 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 120,
+                              size: 50,
                             )),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Text('Elemenet_1')
                       ],
                     ),
                     SizedBox(width: 50),
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 120,
+                              size: 50,
                             )),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Text('Elemenet_1')
                       ],
                     ),
                     SizedBox(width: 50),
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
                             onPressed: null,
                             icon: Icon(
                               Icons.abc,
-                              size: 60,
+                              size: 50,
                             )),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Text('Elemenet_1')
                       ],
                     ),
                   ],
                 ),
                 Text('Ussage and Consumption'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                    SizedBox(width: 50),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                    SizedBox(width: 50),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                  ],
+                ),
                 Text('Manage Account'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                    SizedBox(width: 50),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                    SizedBox(width: 50),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 50,
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text('Elemenet_1')
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
             ElevatedButton(
