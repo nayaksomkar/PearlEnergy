@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
             const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              // mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text('Payments and Bills'),
@@ -52,11 +52,47 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text('a'),
-                    Text('a'),
-                    Text('a'),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 100,
+                            )),
+                        Text('Volume')
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 100,
+                            )),
+                        Text('Volume')
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        IconButton(
+                            onPressed: null,
+                            icon: Icon(
+                              Icons.abc,
+                              size: 100,
+                            )),
+                        Text('Volume')
+                      ],
+                    )
                   ],
-                )
+                ),
               ],
             ),
             ElevatedButton(
