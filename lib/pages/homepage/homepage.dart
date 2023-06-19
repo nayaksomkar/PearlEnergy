@@ -89,6 +89,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Text('Ussage and Consumption'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -145,6 +148,9 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Text('Manage Account'),
                 Row(
