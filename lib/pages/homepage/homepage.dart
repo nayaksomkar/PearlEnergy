@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
   final String title;
