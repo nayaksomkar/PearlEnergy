@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+//import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
@@ -18,31 +18,9 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ImageSlideshow(
-              width: double.infinity,
-              height: 200,
-              initialPage: 0,
-              indicatorColor: Colors.blue,
-              indicatorBackgroundColor: Colors.grey,
-              autoPlayInterval: 3,
-              isLoop: true,
-              children: [
-                Image.asset(
-                  'assets/images/BackgroundImage.jpg',
-                  fit: BoxFit.cover,
-                ),
-                Image.asset(
-                  'assets/images/LogoTransparent.png',
-                  fit: BoxFit.cover,
-                ),
-                Image.asset(
-                  'assets/images/LogoTransparent.png',
-                  fit: BoxFit.cover,
-                ),
-              ],
-            ),
             const Column(
               // mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
