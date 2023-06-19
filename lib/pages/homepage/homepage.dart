@@ -28,8 +28,8 @@ class HomePage extends StatelessWidget {
                   image: AssetImage(
                     'assets/images/IconTransparent.png',
                   ),
-                  height: 300,
-                  width: 300,
+                  height: 200,
+                  width: 200,
                 ),
                 Text('Payments and Bills'),
                 Row(

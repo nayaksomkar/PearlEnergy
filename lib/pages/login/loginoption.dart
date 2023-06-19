@@ -15,8 +15,8 @@ class LoginOption extends StatelessWidget {
               image: AssetImage(
                 'assets/images/LogoTransparent.png',
               ),
-              height: 500,
-              width: 500,
+              height: 300,
+              width: 300,
             ),
             ElevatedButton(
               style: const ButtonStyle(
