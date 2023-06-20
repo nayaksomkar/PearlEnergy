@@ -25,8 +25,15 @@ class HomePage extends StatelessWidget {
                   height: 200,
                   width: 200,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 const Text(
-                  'Payments and Bills',
+                  'Payments and Bills\n___________________',
+                  style: TextStyle(
+                    color: Colors.amberAccent,
+                    fontSize: 15,
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -49,9 +56,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Payment History')
+                        Text(
+                          '     Payment History',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                     const SizedBox(width: 100),
@@ -66,9 +78,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Payment Status')
+                        Text(
+                          '    Payment Status',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                   ],
@@ -77,7 +94,14 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 const Text(
-                  'Ussage and Consumption',
+                  'Ussage and Consumption\n__________________________',
+                  style: TextStyle(
+                    color: Colors.amberAccent,
+                    fontSize: 15,
+                  ),
+                ),
+                const SizedBox(
+                  height: 5,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -94,9 +118,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Ussage History')
+                        Text(
+                          'Ussage History',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                     const SizedBox(width: 100),
@@ -111,9 +140,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Current Ussage')
+                        Text(
+                          'Current Ussage',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                   ],
@@ -122,7 +156,11 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 const Text(
-                  'Manage Account',
+                  'Manage Account\n_________________',
+                  style: TextStyle(
+                    color: Colors.amberAccent,
+                    fontSize: 15,
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -139,9 +177,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Account')
+                        Text(
+                          '   Account',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                     const SizedBox(width: 145),
@@ -161,9 +204,14 @@ class HomePage extends StatelessWidget {
                               size: 40,
                             )),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        const Text('Logout')
+                        Text(
+                          '       Logout',
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.white.withOpacity(0.7)),
+                        )
                       ],
                     ),
                   ],
