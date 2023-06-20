@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                             },
                             icon: const Icon(
                               Icons.payments_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.price_check_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.history_edu_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.stacked_bar_chart_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.person_2_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
@@ -161,7 +161,7 @@ class HomePage extends StatelessWidget {
                             },
                             icon: const Icon(
                               Icons.login_rounded,
-                              size: 50,
+                              size: 40,
                             )),
                         const SizedBox(
                           height: 10,
