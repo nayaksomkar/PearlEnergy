@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/pages/login/user/otppage.dart';
-import 'package:sample/pages/login/user/wronguserloginpage.dart';
+import 'package:sample/pages/login/user/wrong_userloginpage.dart';
 import '../../../main.dart';
 
 class UserLoginPage extends StatelessWidget {
