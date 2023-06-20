@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Payment History')
                       ],
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Payment Status')
                       ],
@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Ussage History')
                       ],
@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Current Ussage')
                       ],
@@ -142,7 +142,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Account')
                       ],
@@ -164,7 +164,7 @@ class HomePage extends StatelessWidget {
                               size: 50,
                             )),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         const Text('Logout')
                       ],
