@@ -38,6 +38,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
@@ -61,6 +64,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {},
                             icon: const Icon(
                               Icons.price_check_rounded,
@@ -90,6 +96,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {},
                             icon: const Icon(
                               Icons.history_edu_rounded,
@@ -107,6 +116,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {},
                             icon: const Icon(
                               Icons.stacked_bar_chart_rounded,
@@ -136,6 +148,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {},
                             icon: const Icon(
                               Icons.person_2_rounded,
@@ -153,6 +168,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            constraints: const BoxConstraints(
+                              minHeight: 100,
+                            ),
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
