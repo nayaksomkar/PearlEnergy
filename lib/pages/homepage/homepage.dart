@@ -24,11 +24,11 @@ class HomePage extends StatelessWidget {
                   height: 200,
                   width: 200,
                 ),
-                Text(
+                const Text(
                   'Payments and Bills',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -67,14 +67,14 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   'Ussage and Consumption',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -113,18 +113,18 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   'Manage Account',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Column(
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -140,7 +140,7 @@ class HomePage extends StatelessWidget {
                         Text('Account')
                       ],
                     ),
-                    SizedBox(width: 130),
+                    const SizedBox(width: 130),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -152,14 +152,14 @@ class HomePage extends StatelessWidget {
                                 return const MyApp();
                               }));
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.login_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Logout')
+                        const Text('Logout')
                       ],
                     ),
                   ],
