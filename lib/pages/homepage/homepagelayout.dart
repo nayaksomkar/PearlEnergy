@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                       children: [
                         IconButton(
                             splashColor: Colors.transparent,
-                            //highlightColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
                             hoverColor: Colors.transparent,
                             onPressed: () {},
                             icon: const Icon(
