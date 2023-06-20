@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
+import 'Payments and Bills/paymenthistory.dart';
+
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
@@ -28,7 +31,7 @@ class HomePage extends StatelessWidget {
                   'Payments and Bills',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -37,19 +40,24 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
-                            icon: Icon(
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return const PaymentHistory(title: 'Admin Login');
+                              }));
+                            },
+                            icon: const Icon(
                               Icons.payments_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Payment History')
+                        const Text('Payment History')
                       ],
                     ),
-                    SizedBox(width: 100),
-                    Column(
+                    const SizedBox(width: 100),
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
