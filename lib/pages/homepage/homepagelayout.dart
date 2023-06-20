@@ -38,6 +38,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            splashColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
@@ -56,20 +59,23 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(width: 100),
-                    const Column(
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
-                            icon: Icon(
+                            splashColor: Colors.transparent,
+                            //highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            onPressed: () {},
+                            icon: const Icon(
                               Icons.price_check_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Payment Status')
+                        const Text('Payment Status')
                       ],
                     ),
                   ],
@@ -81,7 +87,7 @@ class HomePage extends StatelessWidget {
                   'Ussage and Consumption',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -90,32 +96,38 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
-                            icon: Icon(
+                            splashColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            onPressed: () {},
+                            icon: const Icon(
                               Icons.history_edu_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Ussage History')
+                        const Text('Ussage History')
                       ],
                     ),
-                    SizedBox(width: 100),
+                    const SizedBox(width: 100),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
-                            icon: Icon(
+                            splashColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            onPressed: () {},
+                            icon: const Icon(
                               Icons.stacked_bar_chart_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Current Ussage')
+                        const Text('Current Ussage')
                       ],
                     ),
                   ],
@@ -131,20 +143,23 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Column(
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: null,
-                            icon: Icon(
+                            splashColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            onPressed: () {},
+                            icon: const Icon(
                               Icons.person_2_rounded,
                               size: 50,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Account')
+                        const Text('Account')
                       ],
                     ),
                     const SizedBox(width: 130),
@@ -153,6 +168,9 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
+                            splashColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
