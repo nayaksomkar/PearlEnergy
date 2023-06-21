@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "215114873996",
+    "firebase_url": "https://pearlenergy-6388b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pearlenergy-6388b",
+    "storage_bucket": "pearlenergy-6388b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215114873996:android:b066af156f72be6f87cfa9",
+        "android_client_info": {
+          "package_name": "com.example.PearlEnergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215114873996-mjkvqd9bbmjuo240f5i6btvkiu9pq0bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA53iw3quTd__-uDGSLbbk1Mw_WPZyB3VE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215114873996-mjkvqd9bbmjuo240f5i6btvkiu9pq0bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
