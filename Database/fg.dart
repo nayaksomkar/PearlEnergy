@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:convert';
 
-const String path = r"assets\Database\test.json";
+const String path = r"Database\test.json";
 const JsonDecoder decoder = JsonDecoder();
 
 class USER {
