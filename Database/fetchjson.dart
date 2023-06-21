@@ -16,6 +16,4 @@ fetchData(path) {
   return jsondata;
 }
 
-fetchUserDetails(path) {
-  final jsondata = fetchData(path);
-}
+
