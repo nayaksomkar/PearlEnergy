@@ -1,0 +1,224 @@
+{
+  "userdetails": {
+    "consumernumber_65801": {
+      "password": "pass801",
+      "name": "Akshay Sha",
+      "sex": "M",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    },
+    "consumernumber_65802": {
+      "password": "pass802",
+      "name": "Jitendra Bora",
+      "sex": "M",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    },
+    "consumernumber_65803": {
+      "password": "pass803",
+      "name": "Prabodh Agrawal",
+      "sex": "M",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    },
+    "consumernumber_65804": {
+      "password": "pass804",
+      "name": "Naisha Nair",
+      "sex": "F",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    },
+    "consumernumber_65805": {
+      "password": "pass805",
+      "name": "Shweta Garg",
+      "sex": "F",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    },
+    "consumernumber_65806": {
+      "password": "pass806",
+      "name": "Ishita Sen",
+      "sex": "F",
+      "address": "kjh",
+      "mobilenumber": 5688,
+      "emailaddress": "dha@jsa.in"
+    }
+  },
+  "userpaymenthistory_2022": {
+    "consumernumber_65801": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65802": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65803": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65804": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65805": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65806": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    }
+  },
+  "userpaymenthistory_2023": {
+    "consumernumber_65801": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65802": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65803": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65804": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65805": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    },
+    "consumernumber_65806": {
+      "Jan": 45,
+      "Feb": 45,
+      "Mar": 56,
+      "Apr": 56,
+      "May": 23,
+      "Jun": 23,
+      "Jul": 23,
+      "Aug": 45,
+      "Sep": 56,
+      "Oct": 89,
+      "Nov": 45,
+      "Dec": 89
+    }
+  }
+}
