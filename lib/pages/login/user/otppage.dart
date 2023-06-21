@@ -22,6 +22,13 @@ class OtpPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const Image(
+              image: AssetImage(
+                'assets/images/IconTransparent.png',
+              ),
+              height: 200,
+              width: 200,
+            ),
             TextField(
               decoration: const InputDecoration(
                   hintText: "Enter OTP", border: OutlineInputBorder()),
