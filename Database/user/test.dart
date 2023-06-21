@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:convert';
 
-const String path = r"Database\PearlEnergyData.json";
+const String path = r"Database\user\userdetails.json";
 const JsonDecoder decoder = JsonDecoder();
 
 void main() {
@@ -12,5 +12,5 @@ void main() {
   //pass the read string to JsonDecoder class to convert into corresponding Objects
   final Map<String, dynamic> jsonmap = decoder.convert(jsonString);
 
-  print(jsonmap['userdetails']);
+  print(jsonmap);
 }
