@@ -129,6 +129,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+  dartpy:
+    dependency: "direct main"
+    description:
+      name: dartpy
+      sha256: "0504e5cba49a9516e7fc7a3e153488f0444e6d06714b413ff3b61091e0645aa0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1+4"
   fake_async:
     dependency: transitive
     description:
@@ -137,6 +145,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  ffi:
+    dependency: transitive
+    description:
+      name: ffi
+      sha256: "13a6ccf6a459a125b3fcdb6ec73bd5ff90822e071207c663bfd1f70062d51d18"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.1"
   firebase_core:
     dependency: transitive
     description:
@@ -200,6 +216,22 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flython:
+    dependency: "direct main"
+    description:
+      name: flython
+      sha256: c315d960efe337e2dbc9bf4dffb9571ebcf8c3c281a5a8624a569aa8bc545bd8
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: "70776c4541e5cacfe45bcaf00fe79137b8c61aa34fb5765a05ce6c57fd72c6e9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.14.3"
   image:
     dependency: transitive
     description:
@@ -256,6 +288,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  mutex:
+    dependency: transitive
+    description:
+      name: mutex
+      sha256: "03116a4e46282a671b46c12de649d72c0ed18188ffe12a8d0fc63e83f4ad88f4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   path:
     dependency: transitive
     description:
@@ -349,6 +389,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.2"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:
