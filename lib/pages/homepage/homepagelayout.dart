@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          '    Payment Status',
+                          '    Payment Status & Bill',
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
