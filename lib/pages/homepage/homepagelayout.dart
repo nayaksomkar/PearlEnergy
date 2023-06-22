@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
 import 'Payments and Bills/paymenthistory.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
   final String title;
@@ -49,7 +48,7 @@ class HomePage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                return const MyHomePage();
+                                return const PaymentHistoryPage();
                               }));
                             },
                             icon: const Icon(
