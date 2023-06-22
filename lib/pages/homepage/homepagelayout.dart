@@ -29,9 +29,10 @@ class HomePage extends StatelessWidget {
                   height: 10,
                 ),
                 const Text(
-                  'Payments and Bills\n___________________',
+                  'Payments and Bills',
                   style: TextStyle(
                     color: Colors.amberAccent,
+                    decoration: TextDecoration.underline,
                     fontSize: 15,
                   ),
                 ),
@@ -94,9 +95,10 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 const Text(
-                  'Ussage and Consumption\n__________________________',
+                  'Ussage and Consumption',
                   style: TextStyle(
                     color: Colors.amberAccent,
+                    decoration: TextDecoration.underline,
                     fontSize: 15,
                   ),
                 ),
@@ -156,9 +158,10 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 const Text(
-                  'Manage Account\n_________________',
+                  'Manage Account',
                   style: TextStyle(
                     color: Colors.amberAccent,
+                    decoration: TextDecoration.underline,
                     fontSize: 15,
                   ),
                 ),
