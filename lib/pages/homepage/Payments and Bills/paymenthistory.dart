@@ -1,43 +1,62 @@
 import 'package:flutter/material.dart';
 
-List<DropdownMenuItem<String>> get dropdownItems {
-  List<DropdownMenuItem<String>> menuItems = [
-    const DropdownMenuItem(value: "USA", child: Text("USA")),
-    const DropdownMenuItem(value: "Canada", child: Text("Canada")),
-    const DropdownMenuItem(value: "Brazil", child: Text("Brazil")),
-    const DropdownMenuItem(value: "England", child: Text("England")),
-  ];
-  return menuItems;
+
+class MyHomePage extends StatefulWidget {
+const MyHomePage({Key? key}) : super(key: key);
+
+@override
+_MyHomePageState createState() => _MyHomePageState();
 }
 
-String selectedValue = 'USA';
+class _MyHomePageState extends State<MyHomePage> {
+	
+// Initial Selected Value
+String dropdownvalue = 'Item 1';
 
-class PaymentHistory extends StatelessWidget {
-  const PaymentHistory({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                const Text('leleo bro'),
-                DropdownButton(
-                    value: selectedValue,
-                    onChanged: (String? newValue) {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return const PaymentHistory();
-                      }));
-                    },
-                    items: dropdownItems)
-              ],
-            )
-          ],
-        ),
-      ),
-    );
-  }
+// List of items in our dropdown menu
+var items = [	
+	'Item 1',
+	'Item 2',
+	'Item 3',
+	'Item 4',
+	'Item 5',
+];
+@override
+Widget build(BuildContext context) {
+	return Scaffold(
+	appBar: AppBar(
+		title: const Text("Geeksforgeeks"),
+	),
+	body: Center(
+		child: Column(
+		mainAxisAlignment: MainAxisAlignment.center,
+		children: [
+			DropdownButton(
+				
+			// Initial Value
+			value: dropdownvalue,
+				
+			// Down Arrow Icon
+			icon: const Icon(Icons.keyboard_arrow_down),	
+				
+			// Array list of items
+			items: items.map((String items) {
+				return DropdownMenuItem(
+				value: items,
+				child: Text(items),
+				);
+			}).toList(),
+			// After selecting the desired option,it will
+			// change button value to selected value
+			onChanged: (String? newValue) {
+				setState(() {
+				dropdownvalue = newValue!;
+				});
+			},
+			),
+		],
+		),
+	),
+	);
+}
 }
