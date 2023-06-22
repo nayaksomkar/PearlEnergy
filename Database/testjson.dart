@@ -1,10 +1,12 @@
 // ignore_for_file: avoid_print
 
-import 'fetchjson.dart';
+import './user/fetchuserjson.dart';
 
 const String path = r"Database\user\userdetails.json";
+String userid = 'ABC801';
 
-void main() {
-  var data = fetchData(path);
-  print(data);
+main() {
+  var data = userDetails(path, userid);
+
+  return data;
 }
