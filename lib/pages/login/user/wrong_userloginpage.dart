@@ -21,12 +21,12 @@ class WrongUserLoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Image(
-                  image: AssetImage(
-                    'assets/images/IconTransparent.png',
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
+              image: AssetImage(
+                'assets/images/IconTransparent.png',
+              ),
+              height: 200,
+              width: 200,
+            ),
             TextField(
               decoration: const InputDecoration(
                   hintText: "Enter your number", border: OutlineInputBorder()),
@@ -35,7 +35,6 @@ class WrongUserLoginPage extends StatelessWidget {
                 FilteringTextInputFormatter.digitsOnly
               ], // Only numbers can be entered
             ),
-            const Text(''),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),

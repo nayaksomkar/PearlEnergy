@@ -51,6 +51,51 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                 ),
               ],
             ),
+            Table(
+              border: TableBorder.all(color: Colors.white, width: 1.5),
+              children: const [
+                TableRow(children: [
+                  Text(
+                    "MONTH",
+                    style:
+                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "USSAGE",
+                    style:
+                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "BILL",
+                    style:
+                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "PAID ON",
+                    style:
+                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    "2",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ])
+              ],
+            ),
           ],
         ),
       ),

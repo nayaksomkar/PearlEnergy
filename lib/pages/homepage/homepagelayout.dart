@@ -113,7 +113,12 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return const PaymentHistoryPage();
+                              }));
+                            },
                             icon: const Icon(
                               Icons.history_edu_rounded,
                               size: 40,

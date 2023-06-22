@@ -32,7 +32,6 @@ class LoginOption extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            const Text(''),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),

@@ -39,7 +39,6 @@ class UserLoginPage extends StatelessWidget {
                 FilteringTextInputFormatter.digitsOnly
               ], // Only numbers can be entered
             ),
-            const Text(''),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
@@ -54,7 +53,6 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            const Text(''),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
@@ -69,7 +67,6 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            const Text(''),
             TextButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
