@@ -17,6 +17,8 @@ class _UssageHistoryPageState extends State<UssageHistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
+          child: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,7 +55,7 @@ class _UssageHistoryPageState extends State<UssageHistoryPage> {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }

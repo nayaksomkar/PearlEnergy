@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import '../commonvariables.dart';
 
+var tep = "fuck me";
+
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
 
@@ -17,6 +19,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
+          child: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,8 +57,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
             ),
             Table(
               border: TableBorder.all(color: Colors.white, width: 1.5),
-              children: const [
-                TableRow(children: [
+              children: [
+                const TableRow(children: [
                   Text(
                     "MONTH",
                     style:
@@ -78,7 +82,7 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                 ]),
                 TableRow(children: [
                   Text(
-                    "2",
+                    tep,
                     style: TextStyle(fontSize: 15.0),
                   ),
                   Text(
@@ -98,7 +102,7 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }
