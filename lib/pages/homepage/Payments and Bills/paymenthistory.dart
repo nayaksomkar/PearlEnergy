@@ -2,8 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../commonvariables.dart';
-
-var tep = "fuck me";
+import './paymentsvariable.dart';
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);

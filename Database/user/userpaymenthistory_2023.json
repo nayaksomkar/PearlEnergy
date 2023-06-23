@@ -1,86 +1,374 @@
 {
     "ABC801": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     },
     "ABC802": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     },
     "ABC803": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     },
     "ABC804": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     },
     "ABC805": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     },
     "ABC806": {
-        "Jan": 45,
-        "Feb": 45,
-        "Mar": 56,
-        "Apr": 56,
-        "May": 23,
-        "Jun": 23,
-        "Jul": 23,
-        "Aug": 45,
-        "Sep": 56,
-        "Oct": 89,
-        "Nov": 45,
-        "Dec": 89
+        "Jan": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Feb": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Mar": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Apr": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "May": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jun": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Jul": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Aug": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Sep": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Oct": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Nov": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        },
+        "Dec": {
+            "ussage": 45,
+            "bill": 23,
+            "paid": true
+        }
     }
 }
