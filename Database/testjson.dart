@@ -2,11 +2,11 @@
 
 import './user/fetchuserjson.dart';
 
-const String path = r"Database\user\userdetails.json";
+const String path = r"Database\user\userpaymenthistory_2022.json";
 String userid = 'ABC801';
 
 main() {
-  var data = userDetails(path, userid);
+  var data = userData(path, userid);
 
   return data;
 }

@@ -3,12 +3,13 @@
 
 import '../fetchjson.dart';
 
-
 Map fetchUserDetails(path) {
   final jsondata = fetchData(path);
 
   return jsondata;
 }
+
+
 
 Map checkUser(path, userid) {
   var data = fetchUserDetails(path);
@@ -21,14 +22,18 @@ Map checkUser(path, userid) {
   return {"BooleanValue": booleanvalue, "UserId": userid, "JsonData": data};
 }
 
-Map userDetails(path, userid) {
+
+
+Map userData(path, userid) {
   Map functiondata = checkUser(path, userid);
-  // ignore: prefer_typing_uninitialized_variables
-  var userdetails;
+   // ignore: prefer_typing_uninitialized_variables
+  var userdata;
+
   if (functiondata["BooleanValue"]) {
-    userdetails = functiondata['JsonData'][userid];
-    print(userdetails);
+    userdata = functiondata['JsonData'][userid];
+    print(userdata);
   }
 
-  return userdetails;
+
+  return userdata;
 }
