@@ -9,6 +9,6 @@ String userid = 'ABC801'; */
 main() {
   Map data = userData(
       path: r"Database\user\userpaymenthistory_2022.json", userid: 'ABC801');
-  data = {"hello": 'bitch'};
+
   return data;
 }
