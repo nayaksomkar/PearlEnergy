@@ -2,6 +2,5 @@
 
 ![PearlEnergy Logo](https://github.com/nayaksomkar/PearlEnergy/blob/master/assets/images/logo.png)
 
-An app with User\Admin authentication, ussage tracking and bills payments.
-
+An Android\Web app with User\Admin authentication, ussage tracking and bills payments.
 With the help of flutter framework, dart language and local Json files as database.
