@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../commonvariables.dart';
-import './paymentsvariable.dart';
+import 'paymentsvariable.dart';
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
@@ -17,6 +17,13 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'PAYMENT HISTORY OF YEAR $year',
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: Center(
           child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -29,8 +36,11 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(
-                  'Select Year : ',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  'Select Year    : ',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
                 ),
                 const SizedBox(
                   width: 15,
@@ -49,6 +59,7 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   onChanged: (String? newValue) {
                     setState(() {
                       dropdownvalue = newValue!;
+                      year = newValue;
                     });
                   },
                 ),
@@ -81,18 +92,216 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                 ]),
                 TableRow(children: [
                   Text(
-                    tep,
-                    style: TextStyle(fontSize: 15.0),
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
                   ),
-                  Text(
+                  const Text(
                     "Ankit",
                     style: TextStyle(fontSize: 15.0),
                   ),
-                  Text(
+                  const Text(
                     "27",
                     style: TextStyle(fontSize: 15.0),
                   ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
                   Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  const Text(
                     "27",
                     style: TextStyle(fontSize: 15.0),
                   ),
