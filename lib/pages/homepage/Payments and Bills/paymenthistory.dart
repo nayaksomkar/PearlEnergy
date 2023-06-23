@@ -1,8 +1,9 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
+import '../../../packages/json/user/fetchuserjson.dart';
 import '../commonvariables.dart';
-import 'paymentsvariable.dart';
+import '../../../packages/variables/paymentsvariable.dart';
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
@@ -60,6 +61,9 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                     setState(() {
                       dropdownvalue = newValue!;
                       year = newValue;
+                      jsondata = userData(
+                          path: r"Database\user\userpaymenthistory_2022.json",
+                          userid: 'ABC801');
                     });
                   },
                 ),
@@ -73,21 +77,91 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                     "MONTH",
                     style:
                         TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
                   ),
                   Text(
                     "USSAGE",
                     style:
                         TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
                   ),
                   Text(
                     "BILL",
                     style:
                         TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
                   ),
                   Text(
                     "PAID ON",
                     style:
                         TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
+                ]),
+                TableRow(children: [
+                  const Text(
+                    'JAN',
+                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    "$janUssage",
+                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    "27",
+                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -97,15 +171,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -115,15 +192,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -133,15 +213,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -151,15 +234,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -169,15 +255,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -187,15 +276,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -205,15 +297,40 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                ]),
+                TableRow(children: [
+                  Text(
+                    year,
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "Ankit",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  const Text(
+                    "27",
+                    style: const TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ]),
                 TableRow(children: [
@@ -223,87 +340,18 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                   ),
                   const Text(
                     "Ankit",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
                     style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
                     style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                   const Text(
                     "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
                     style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
+                    textAlign: TextAlign.center,
                   ),
                 ])
               ],

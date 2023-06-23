@@ -31,7 +31,6 @@ Map userData({required String path, required String userid}) {
 
   if (functiondata["BooleanValue"]) {
     userdata = functiondata['JsonData'];
-    print(userdata);
   }
 
   return userdata;
