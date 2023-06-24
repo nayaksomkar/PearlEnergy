@@ -20,6 +20,7 @@ main() {
   //print(janUssage); */
 
   String df = defhj();
+  // ignore: avoid_print
   print(df.runtimeType);
 }
 

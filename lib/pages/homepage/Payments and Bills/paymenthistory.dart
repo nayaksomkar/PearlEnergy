@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import '../../../packages/user/fetchuserjson.dart';
 import '../commonvariables.dart';
 import '../../../packages/variables/paymentsvariable.dart';

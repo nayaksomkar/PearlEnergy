@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'admin/adminloginpage.dart';
 import 'user/userloginpage.dart';
 
 class LoginOption extends StatelessWidget {
