@@ -7,9 +7,6 @@ import 'dart:convert';
 const String path = r"Database\user\userpaymenthistory_2022.json";
 String userid = 'ABC801'; */
 
-const url =
-    "https://raw.githubusercontent.com/nayaksomkar/PearlEnergy/master/Database/user/userpaymenthistory_2022.json";
-
 // ignore: camel_case_types
 class jsonuserdata {
   String ussage = '', bill = '', paidon = '';
@@ -22,16 +19,16 @@ main() async {
       path: r"Database\user\userpaymenthistory_2022.json", userid: 'ABC801');
 
   return data; */
-
+  String url =
+      "https://raw.githubusercontent.com/nayaksomkar/PearlEnergy/master/Database/user/userpaymenthistory_2022.json";
   // ignore: unused_local_variable
-  var response = await http.get(url as Uri);
+  var response = await http.get(Uri.parse(url));
   List<jsonuserdata> alldata = [];
   if (response.statusCode == 200) {
     String responseBody = response.body;
     var jsonBody = json.decode(responseBody);
-    for (var data in jsonBody) {
-     // alldata.add(new jsonuserdata(ussage, bill, paidon));
-    }
+
+    print(jsonBody['ABC801']['Jan']['ussage'].runtimeType);
   } else {
     print('error');
   }
