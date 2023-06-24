@@ -1,5 +1,6 @@
-{
-    "ABC801": {
+[
+    {
+        "userid": "ABC801",
         "password": "pass801",
         "name": "Akshay Sha",
         "sex": "M",
@@ -7,7 +8,8 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     },
-    "ABC802": {
+    {
+        "userid": "ABC802",
         "consumernumber": 65802,
         "password": "pass802",
         "name": "Jitendra Bora",
@@ -16,7 +18,8 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     },
-    "ABC803": {
+    {
+        "userid": "ABC803",
         "consumernumber": 65803,
         "password": "pass803",
         "name": "Prabodh Agrawal",
@@ -25,7 +28,8 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     },
-    "ABC804": {
+    {
+        "userid": "ABC804",
         "consumernumber": 65804,
         "password": "pass804",
         "name": "Naisha Nair",
@@ -34,7 +38,8 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     },
-    "ABC805": {
+    {
+        "userid": "ABC805",
         "consumernumber": 65805,
         "password": "pass805",
         "name": "Shweta Garg",
@@ -43,7 +48,8 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     },
-    "ABC806": {
+    {
+        "userid": "ABC806",
         "consumernumber": 65806,
         "password": "pass806",
         "name": "Ishita Sen",
@@ -52,4 +58,4 @@
         "mobilenumber": 5688,
         "emailaddress": "dha@jsa.in"
     }
-}
+]

@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 //import '../../../packages/user/fetchuserjson.dart';
 import '../commonvariables.dart';
-import '../../../packages/variables/paymentsvariable.dart';
+//import '../../../packages/variables/paymentsvariable.dart';
+
+String year = '2022';
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
@@ -68,9 +70,11 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               ],
             ),
             Table(border: TableBorder.all(color: Colors.white), children: [
-              buildRow([df, 'bill', 'paidon']),
+              buildRow(['df', 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
+
+         
               //buildRow(bell),
               /* buildRow(['Apr', 'cell']),
               buildRow(['May', 'cell']),

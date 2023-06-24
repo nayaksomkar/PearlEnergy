@@ -1,4 +1,4 @@
-//used to so that compiler will ignore minor code problems.
+/* //used to so that compiler will ignore minor code problems.
 // ignore_for_file: avoid_print
 
 import '../json/fetchjson.dart';
@@ -37,3 +37,4 @@ Map userData({required String path, required String userid}) {
   return userdata;
 }
 
+ */
