@@ -24,20 +24,6 @@ class LoginOption extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const AdminLoginPage(title: 'Admin Login');
-                }));
-              },
-              child: const Text(
-                'Admin Login',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ),
-            ElevatedButton(
-              style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const UserLoginPage(title: 'User Login');
                 }));
               },

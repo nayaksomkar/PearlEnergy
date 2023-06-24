@@ -14,7 +14,7 @@ class jsonuserdata {
   jsonuserdata(this.ussage, this.bill, this.paidon);
 }
 
-main() async {
+defhj() async {
 /*   Map data = userData(
       path: r"Database\user\userpaymenthistory_2022.json", userid: 'ABC801');
 
@@ -29,6 +29,7 @@ main() async {
     var jsonBody = json.decode(responseBody);
 
     print(jsonBody['ABC801']['Jan']['ussage'].runtimeType);
+    return jsonBody['ABC801']['Jan']['ussage'];
   } else {
     print('error');
   }

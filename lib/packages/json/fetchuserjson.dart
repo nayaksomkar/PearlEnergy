@@ -1,7 +1,7 @@
 //used to so that compiler will ignore minor code problems.
 // ignore_for_file: avoid_print
 
-import '../fetchjson.dart';
+import '../json/fetchjson.dart';
 
 
 Map fetchUserDetails({required String path}) {

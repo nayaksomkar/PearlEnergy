@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
-import '../../../packages/json/user/fetchuserjson.dart';
+import '../../../packages/user/fetchuserjson.dart';
 import '../commonvariables.dart';
 import '../../../packages/variables/paymentsvariable.dart';
 
@@ -67,10 +67,10 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               ],
             ),
             Table(border: TableBorder.all(color: Colors.white), children: [
+              buildRow([df, 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
-              buildRow(['Jan', 'bill', 'paidon']),
-              buildRow(bell),
+              //buildRow(bell),
               /* buildRow(['Apr', 'cell']),
               buildRow(['May', 'cell']),
               buildRow(['June', 'cell']),
