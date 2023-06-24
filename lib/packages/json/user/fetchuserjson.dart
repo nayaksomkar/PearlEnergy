@@ -3,6 +3,7 @@
 
 import '../fetchjson.dart';
 
+
 Map fetchUserDetails({required String path}) {
   final jsondata = fetchData(path: path);
 
@@ -35,3 +36,4 @@ Map userData({required String path, required String userid}) {
 
   return userdata;
 }
+

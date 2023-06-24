@@ -61,304 +61,42 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                     setState(() {
                       dropdownvalue = newValue!;
                       year = newValue;
-                      jsondata = userData(
-                          path: r"Database\user\userpaymenthistory_2022.json",
-                          userid: 'ABC801');
                     });
                   },
                 ),
               ],
             ),
-            Table(
-              border: TableBorder.all(color: Colors.white, width: 1.5),
-              children: [
-                const TableRow(children: [
-                  Text(
-                    "MONTH",
-                    style:
-                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "USSAGE",
-                    style:
-                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "BILL",
-                    style:
-                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "PAID ON",
-                    style:
-                        TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  const Text(
-                    'JAN',
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "$janUssage",
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    "27",
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    year,
-                    style: const TextStyle(fontSize: 15.0),
-                  ),
-                  const Text(
-                    "Ankit",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    "27",
-                    style: const TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ])
-              ],
-            ),
+            Table(border: TableBorder.all(color: Colors.white), children: [
+              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(bell),
+              /* buildRow(['Apr', 'cell']),
+              buildRow(['May', 'cell']),
+              buildRow(['June', 'cell']),
+              buildRow(['Jul', 'cell']),
+              buildRow(['Aug', 'cell']),
+              buildRow(['Sep', 'cell']),
+              buildRow(['Oct', 'cell']),
+              buildRow(['Nov', 'cell']),
+              buildRow(['Dec', 'cell']) */
+            ]),
           ],
         ),
       )),
     );
   }
 }
+
+TableRow buildRow(List<String> cells) => TableRow(
+        children: cells.map((cell) {
+      return Padding(
+        padding: const EdgeInsets.all(10),
+        child: Center(
+          child: Text(
+            cell,
+            //style: style,
+          ),
+        ),
+      );
+    }).toList());
