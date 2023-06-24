@@ -42,7 +42,7 @@ import 'package:sample/packages/json/fetchjson.dart';
 
 void main() {
   var c = fetchJsonData(userid: 'ABC801');
-  print(c.runtimeType);
-  print(c['BooleanValue']);
+  print(c);
+  //print(c['BooleanValue']);
   //print(c['BooleanValue']);
 }
