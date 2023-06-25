@@ -1,4 +1,4 @@
-/* // ignore_for_file: avoid_print
+/* /* // ignore_for_file: avoid_print
 
 // ignore: unused_import
 //import 'fetchuserjson.dart';
@@ -40,9 +40,38 @@ defhj() async {
 
 import 'package:sample/packages/json/fetchjson.dart';
 
-void main() {
-  var c = fetchJsonData(userid: 'ABC801');
-  print(c);
+/* Future main() async {
+  var c = await fetchJsonData(userid: 'ABC801');
+  print(c[0][1].runtimeType);
+  //print(c["BooleanValue"]);
   //print(c['BooleanValue']);
-  //print(c['BooleanValue']);
+
+  return c;
+} */
+
+//var test = main();
+
+var funValue;
+
+Future testgh() async {
+  //return await fetchJsonData(userid: 'ABC801');
+
+  fetchJsonData(userid: 'ABC801').then((value) {
+    // print(value[0]);
+    print(value);
+    //funValue = value;
+    //return funValue ;
+
+    funValue = value;
+  });
+
+  print(funValue);
 }
+
+Future main() async {
+  var test = testgh().then((value) {
+    return value;
+  });
+  test.then((value) => print(value));
+}
+ */

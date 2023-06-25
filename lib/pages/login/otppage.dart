@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../homepage/homepagelayout.dart';
+import 'package:sample/pages/homepage/homepagelayout.dart';
+
 import 'userloginpage.dart';
 
 class OtpPage extends StatelessWidget {

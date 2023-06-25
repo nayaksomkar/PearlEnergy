@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'user/userloginpage.dart';
+import 'package:sample/pages/login/userloginpage.dart';
+
 
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);

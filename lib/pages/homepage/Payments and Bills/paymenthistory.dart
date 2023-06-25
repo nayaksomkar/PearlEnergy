@@ -3,11 +3,17 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 //import '../../../packages/user/fetchuserjson.dart';
+//import '../../../packages/json/testjson.dart';
 import '../commonvariables.dart';
 //import '../../../packages/variables/paymentsvariable.dart';
 
 String year = '2022';
-
+/* Future<List<List<String>>> paymentHistory = testgh().then((value) {
+  // print(value[0]);
+  //print(value);
+  return value as List<List<String>>;
+});
+ */
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
 
@@ -73,8 +79,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               buildRow(['df', 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
               buildRow(['Jan', 'bill', 'paidon']),
+              //buildRow(paymentHistory[0]),
 
-         
               //buildRow(bell),
               /* buildRow(['Apr', 'cell']),
               buildRow(['May', 'cell']),
