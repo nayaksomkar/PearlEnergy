@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sample/pages/login/otppage.dart';
-import 'package:sample/pages/login/wrong_userloginpage.dart';
-
-import '../../../main.dart';
+import 'package:sample/pages/homepage/homepagelayout.dart';
+import 'package:sample/pages/login/loginoption.dart';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -11,13 +9,6 @@ class UserLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          title,
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-      ),
       body: Center(
           child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,22 +23,40 @@ class UserLoginPage extends StatelessWidget {
               height: 200,
               width: 200,
             ),
+            const SizedBox(
+              height: 80,
+            ),
             TextField(
               decoration: const InputDecoration(
-                  hintText: "Enter your number", border: OutlineInputBorder()),
+                  hintText: "Enter your Customer Identification Number",
+                  border: OutlineInputBorder()),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
               ], // Only numbers can be entered
             ),
-           
+            const SizedBox(
+              height: 5,
+            ),
+            TextField(
+              decoration: const InputDecoration(
+                  hintText: "Enter your Registered Phone Number",
+                  border: OutlineInputBorder()),
+              keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.digitsOnly
+              ], // Only numbers can be entered
+            ),
+            const SizedBox(
+              height: 80,
+            ),
             ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const OtpPage(title: 'OTP');
+                  return const HomePage(title: 'Home Page');
                 }));
               },
               child: const Text(
@@ -55,31 +64,18 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-           
-            ElevatedButton(
-              style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const WrongUserLoginPage(title: 'WrongUserLoginPage');
-                }));
-              },
-              child: const Text(
-                'Wrong Phone Number',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
+            const SizedBox(
+              height: 20,
             ),
-           
             TextButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const MyApp();
+                  return const LoginOption(title: 'LoginOption');
                 }));
               },
               child: const Text(
-                'Go back',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                'Return To Login Page',
+                style: TextStyle(fontSize: 15),
               ),
             ),
           ],

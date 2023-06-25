@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample/pages/nointernet.dart';
 import 'package:sample/pages/login/newuser.dart';
 import 'package:sample/pages/login/userloginpage.dart';
 
@@ -47,6 +48,17 @@ class LoginOption extends StatelessWidget {
                 },
                 child: const Text(
                   'New User',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const NoInternetPage();
+                  }));
+                },
+                child: const Text(
+                  'Error page',
                   style: TextStyle(fontSize: 15),
                 ),
               )

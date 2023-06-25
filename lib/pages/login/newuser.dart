@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:sample/pages/login/loginoption.dart';
-import 'package:sample/pages/login/otppage.dart';
-import 'package:sample/pages/login/wrong_userloginpage.dart';
-
-import '../../../main.dart';
 
 class NewUserPage extends StatelessWidget {
   const NewUserPage({Key? key, required this.title}) : super(key: key);

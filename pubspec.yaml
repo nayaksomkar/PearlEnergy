@@ -78,6 +78,7 @@ flutter:
     - assets/images/Logo.png
     - assets/images/Icon.png
     - assets/images/IconTransparent.png
+    - assets/images/NoInternetConnection.jpg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
