@@ -14,8 +14,8 @@ fetchCSVData() async {
   return data;
 }
 
-main() async{
-  var rec = await collectcsv();
+main() {
+  var rec =  collectcsv();
 
   print(rec);
 }

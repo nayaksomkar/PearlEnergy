@@ -1,47 +1,34 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, unused_local_variable, prefer_typing_uninitialized_variables
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+
+import 'json_paymenthistory.dart';
 
 /* const String url =
     'raw.githubusercontent.com/nayaksomkar/PearlEnergy/master/Database/userpaymenthistory_2022.json'; */
 String jsonFileName = 'userpaymenthistory_2022.json';
 String jsonFilePath = '/nayaksomkar/PearlEnergy/master/Database';
 
-class PaymentHistoryJson {
-  final String month;
-  //final String ussage;
-  final String bill;
-  final String paymentDate;
-
-  PaymentHistoryJson({
-    required this.month,
-    required this.bill,
-    required this.paymentDate,
-  });
-
-  factory PaymentHistoryJson.fromJson(Map<String, dynamic> json) {
-    //final jsondata = json[''];
-
-    return PaymentHistoryJson(
-        month: json['ABC001']['Jan']['ussage'],
-        bill: json['ABC001']['Jan']['bill'],
-        paymentDate: json['ABC001']['Jan']['paymentDate']);
-  }
-}
-
-Future<PaymentHistoryJson> fetchJsonData({jsonFileName, jsoFilePath}) async {
+Future fetchJsonData({jsonFileName, jsoFilePath}) async {
   final url =
       Uri.https('raw.githubusercontent.com', '$jsonFilePath/$jsonFileName');
   final rawdata = await http.get(url);
-  final PaymentHistoryJson jsondata = json.decode(rawdata.body);
-  //fatBitch = jsondata;
+  final jsondata = json.decode(rawdata.body);
   print(jsondata);
   return jsondata;
 }
 
-void main() async {
-  var fatBitch = await fetchJsonData(
-      jsonFileName: jsonFileName, jsoFilePath: jsonFilePath);
-  print(fatBitch);
+void main() {
+  var testdata;
+  var jsondata =
+      fetchJsonData(jsonFileName: jsonFileName, jsoFilePath: jsonFilePath);
+
+  jsondata.then((value) {
+    print(value);
+    //testdata = value;
+  });
+
+  //print(jsondata);
+  //print(testdata);
 }

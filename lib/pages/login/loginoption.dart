@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sample/pages/login/newuser.dart';
 import 'package:sample/pages/login/userloginpage.dart';
-
 
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
@@ -18,20 +18,39 @@ class LoginOption extends StatelessWidget {
               height: 300,
               width: 300,
             ),
-            ElevatedButton(
-              style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                  foregroundColor: MaterialStatePropertyAll(Colors.black)),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const UserLoginPage(title: 'User Login');
-                }));
-              },
-              child: const Text(
-                'User Login',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
+            const SizedBox(
+              height: 150,
             ),
+            Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+              ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                    foregroundColor: MaterialStatePropertyAll(Colors.black)),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const UserLoginPage(title: 'User Login');
+                  }));
+                },
+                child: const Text(
+                  'Continue to Login',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const NewUserPage(title: 'User Login');
+                  }));
+                },
+                child: const Text(
+                  'New User',
+                  style: TextStyle(fontSize: 15),
+                ),
+              )
+            ])
           ],
         ),
       ),

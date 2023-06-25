@@ -78,21 +78,16 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               ],
             ),
             Table(border: TableBorder.all(color: Colors.white), children: [
-              buildRow(),
-              //buildRow(['Jan', 'bill', 'paidon']),
-              // buildRow(['Jan', 'bill', 'paidon']),
-              //buildRow(paymentHistory[0]),
-
-              //buildRow(bell),
-              /* buildRow(['Apr', 'cell']),
-              buildRow(['May', 'cell']),
-              buildRow(['June', 'cell']),
-              buildRow(['Jul', 'cell']),
-              buildRow(['Aug', 'cell']),
-              buildRow(['Sep', 'cell']),
-              buildRow(['Oct', 'cell']),
-              buildRow(['Nov', 'cell']),
-              buildRow(['Dec', 'cell']) */
+              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(['May', 'bill', 'paidon']),
+              buildRow(['June', 'bill', 'paidon']),
+              buildRow(['Jul', 'bill', 'paidon']),
+              buildRow(['Aug', 'bill', 'paidon']),
+              buildRow(['Sep', 'bill', 'paidon']),
+              buildRow(['Oct', 'bill', 'paidon']),
+              buildRow(['Nov', 'bill', 'paidon']),
+              buildRow(['Dec', 'bill', 'paidon'])
             ]),
           ],
         ),
@@ -101,8 +96,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
   }
 }
 
-buildRow() async => TableRow(
-        children: await collectcsv().map((cell) {
+TableRow buildRow(List<String> cells) => TableRow(
+        children: cells.map((cell) {
       return Padding(
         padding: const EdgeInsets.all(10),
         child: Center(
