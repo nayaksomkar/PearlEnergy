@@ -41,7 +41,7 @@ Future<PaymentHistoryJson> fetchJsonData({jsonFileName, jsoFilePath}) async {
 }
 
 void main() async {
-  var fatBitch =
-      fetchJsonData(jsonFileName: jsonFileName, jsoFilePath: jsonFilePath);
+  var fatBitch = await fetchJsonData(
+      jsonFileName: jsonFileName, jsoFilePath: jsonFilePath);
   print(fatBitch);
 }
