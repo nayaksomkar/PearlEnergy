@@ -5,7 +5,7 @@ String csvFileName = 'sample.csv';
 String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
 
 fetchCSVData() async {
-  var data;
+  String data;
   final url =
       Uri.https('raw.githubusercontent.com', '$csvFilePath/$csvFileName');
 
