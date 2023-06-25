@@ -1,25 +1,39 @@
 import 'package:http/http.dart' as http;
 //import 'package:csv/csv.dart';
 
-String jsonFileName = 'sample.csv';
-String jsonFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
+String csvFileName = 'sample.csv';
+String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
 
-var data;
 fetchCSVData() async {
+  var data;
   final url =
-      Uri.https('raw.githubusercontent.com', '$jsonFilePath/$jsonFileName');
-  //final rawdata =
-  //final data  = csv.decode(rawdata.body);
-  //print(rawdata);
+      Uri.https('raw.githubusercontent.com', '$csvFilePath/$csvFileName');
 
   data = await http.read(url);
 
   return data;
 }
 
-main() async {
-  data = await fetchCSVData();
+main() async{
+  var rec = await collectcsv();
+
+  print(rec);
+}
+
+collectcsv() async {
+  List<List<String>> tempList = [];
+  var records = await fetchCSVData();
   //data = data.split(",");
-  data = data.split("\n");
-  print(data.runtimeType);
+  records = records.split("\n");
+  //data = data[3].split(',');
+  //print(data);
+
+  for (var data in records) {
+    if (data.length > 0) {
+      var value = data.split("\n");
+      tempList.add(value);
+    }
+  }
+  //print(tempList);
+  return tempList[0].toList();
 }

@@ -1,6 +1,7 @@
-// ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations
+// ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:sample/packages/csv/fetchcsv.dart';
 // ignore: unused_import
 //import '../../../packages/user/fetchuserjson.dart';
 //import '../../../packages/json/testjson.dart';
@@ -14,6 +15,7 @@ String year = '2022';
   return value as List<List<String>>;
 });
  */
+
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
 
@@ -76,9 +78,9 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
               ],
             ),
             Table(border: TableBorder.all(color: Colors.white), children: [
-              buildRow(['df', 'bill', 'paidon']),
-              buildRow(['Jan', 'bill', 'paidon']),
-              buildRow(['Jan', 'bill', 'paidon']),
+              buildRow(),
+              //buildRow(['Jan', 'bill', 'paidon']),
+              // buildRow(['Jan', 'bill', 'paidon']),
               //buildRow(paymentHistory[0]),
 
               //buildRow(bell),
@@ -99,8 +101,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
   }
 }
 
-TableRow buildRow(List<String> cells) => TableRow(
-        children: cells.map((cell) {
+buildRow() async => TableRow(
+        children: await collectcsv().map((cell) {
       return Padding(
         padding: const EdgeInsets.all(10),
         child: Center(
