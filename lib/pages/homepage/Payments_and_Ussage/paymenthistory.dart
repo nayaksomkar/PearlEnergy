@@ -9,12 +9,7 @@ import 'package:flutter/services.dart';
 //import '../../../packages/variables/paymentsvariable.dart';
 
 String year = '2022';
-/* Future<List<List<String>>> paymentHistory = testgh().then((value) {
-  // print(value[0]);
-  //print(value);
-  return value as List<List<String>>;
-});
- */
+
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);

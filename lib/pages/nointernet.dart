@@ -30,7 +30,7 @@ class NoInternetPage extends StatelessWidget {
                 }));
               },
               child: const Text(
-                'Return To Login Page',
+                'Try Again',
                 style: TextStyle(fontSize: 15),
               ),
             )
