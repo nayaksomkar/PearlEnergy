@@ -6,6 +6,7 @@ import 'package:sample/pages/login/userloginpage.dart';
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
   final String title;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
