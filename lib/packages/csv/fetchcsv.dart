@@ -10,14 +10,26 @@ fetchCSVData() async {
       Uri.https('raw.githubusercontent.com', '$csvFilePath/$csvFileName');
 
   data = await http.read(url);
+  //print(data);
+  //print(data.runtimeType);
+  //print(data.split('\n'));
+  //print(data);
+  var temp = data.split('\n');
+  //print(data.split('\n'));
+  // print(data);
+  //var temp = data.split('\n');
+  var row = temp[0];
+  var rowele = row.split(',');
+  print(rowele[0]);
 
-  return data;
+  //return temp_data;
 }
 
 main() {
-  var rec =  collectcsv();
+  //var rec = collectcsv();
+  fetchCSVData();
 
-  print(rec);
+  //print(rec);
 }
 
 collectcsv() async {
