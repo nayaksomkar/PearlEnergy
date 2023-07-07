@@ -29,8 +29,10 @@ class NoInternetPage extends StatelessWidget {
                   return const LoginOption(title: 'LoginOption');
                 }));
               },
-              child: const Text(
+              // ignore: prefer_const_constructors
+              child:  Text(
                 'Try Again',
+                // ignore: prefer_const_constructors
                 style: TextStyle(fontSize: 15),
               ),
             )

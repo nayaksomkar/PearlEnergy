@@ -59,8 +59,10 @@ class UserLoginPage extends StatelessWidget {
                   return const HomePage(title: 'Home Page');
                 }));
               },
-              child: const Text(
+              // ignore: prefer_const_constructors
+              child: Text(
                 'Verify',
+                // ignore: prefer_const_constructors
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
@@ -73,8 +75,10 @@ class UserLoginPage extends StatelessWidget {
                   return const LoginOption(title: 'LoginOption');
                 }));
               },
-              child: const Text(
+              // ignore: prefer_const_constructors
+              child: Text(
                 'Return To Login Page',
+                // ignore: prefer_const_constructors
                 style: TextStyle(fontSize: 15),
               ),
             ),

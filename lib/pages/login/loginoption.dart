@@ -33,8 +33,10 @@ class LoginOption extends StatelessWidget {
                     return const UserLoginPage(title: 'User Login');
                   }));
                 },
-                child: const Text(
+                // ignore: prefer_const_constructors
+                child:Text(
                   'Continue to Login',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
@@ -47,8 +49,10 @@ class LoginOption extends StatelessWidget {
                     return const NewUserPage(title: 'User Login');
                   }));
                 },
-                child: const Text(
+                // ignore: prefer_const_constructors
+                child:  Text(
                   'New User',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(fontSize: 15),
                 ),
               ),
@@ -58,8 +62,10 @@ class LoginOption extends StatelessWidget {
                     return const NoInternetPage();
                   }));
                 },
-                child: const Text(
+                // ignore: prefer_const_constructors
+                child: Text(
                   'Error page',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(fontSize: 15),
                 ),
               )

@@ -28,8 +28,10 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                const Text(
+                // ignore: prefer_const_constructors
+                Text(
                   'Payments and Bills',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(
                     color: Colors.amberAccent,
                     decoration: TextDecoration.underline,
@@ -93,8 +95,10 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
+           // ignore: prefer_const_constructors
+           Text(
                   'Ussage and Consumption',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(
                     color: Colors.amberAccent,
                     decoration: TextDecoration.underline,
@@ -161,8 +165,10 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
+           // ignore: prefer_const_constructors
+           Text(
                   'Manage Account',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(
                     color: Colors.amberAccent,
                     decoration: TextDecoration.underline,

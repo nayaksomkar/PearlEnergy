@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:http/http.dart' as http;
 //import 'package:csv/csv.dart';
 
@@ -5,24 +7,28 @@ String csvFileName = 'sample.csv';
 String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
 
 fetchCSVData() async {
+  List tempList = [];
   String data;
   final url =
       Uri.https('raw.githubusercontent.com', '$csvFilePath/$csvFileName');
 
   data = await http.read(url);
-  //print(data);
-  //print(data.runtimeType);
-  //print(data.split('\n'));
-  //print(data);
   var temp = data.split('\n');
-  //print(data.split('\n'));
-  // print(data);
-  //var temp = data.split('\n');
-  var row = temp[0];
+  /* var row = temp[0];
   var rowele = row.split(',');
-  print(rowele[0]);
+  print(rowele[0]); */
 
-  //return temp_data;
+  for (final elements in temp) {
+    final element = elements.split(',');
+   // print(element);
+    tempList.add(element);
+  }
+  print('');
+  print(tempList);
+  print('');
+  print(tempList[0]);
+  print('');
+  print(tempList[0][0]);
 }
 
 main() {

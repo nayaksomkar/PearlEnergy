@@ -27,8 +27,10 @@ class _UssageHistoryPageState extends State<UssageHistoryPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text(
+  // ignore: prefer_const_constructors
+  Text(
                   'Select Year : ',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
