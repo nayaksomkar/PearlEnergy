@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sample/packages/csvfunctions.dart';
 import 'package:sample/pages/login/loginoption.dart';
 import 'package:sample/pages/login/otpPage.dart';
+import 'package:sample/pages/nointernet.dart';
 
 late String consumerID;
 late String mobileNumber;
@@ -45,7 +47,22 @@ class UserLoginPage extends StatelessWidget {
                   FocusScope.of(context).nextFocus();
                   consumerID = value;
 
-                  
+                  checkUser().then((value) {
+                    if (value.contains(consumerID)) {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return OtpPage(
+                          title: 'Home Page',
+                          phoneNumber: consumerID,
+                        );
+                      }));
+                    } else {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const NoInternetPage();
+                      }));
+                    }
+                  });
                 }
               },
             ),
@@ -60,12 +77,22 @@ class UserLoginPage extends StatelessWidget {
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return OtpPage(
-                    title: 'Home Page',
-                    phoneNumber: consumerID,
-                  );
-                }));
+                checkUser().then((value) {
+                  if (value.contains(consumerID)) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return OtpPage(
+                        title: 'Home Page',
+                        phoneNumber: consumerID,
+                      );
+                    }));
+                  } else {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const NoInternetPage();
+                    }));
+                  }
+                });
               },
               // ignore: prefer_const_constructors
               child: Text(

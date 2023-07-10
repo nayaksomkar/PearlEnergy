@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 String csvFilePath =
     '/nayaksomkar/PearlEnergy/master/data/csv/user/accountDetails.csv';
 
-chkUser() async {
+checkUser() async {
   List tempList = [];
   String data;
 
@@ -22,12 +22,4 @@ chkUser() async {
   }
 
   return tempList;
-}
-
-void main() {
-  chkUser().then((value) {
-    if (value.contains('ABC821')) {
-      print('found');
-    }
-  });
 }
