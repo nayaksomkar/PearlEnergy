@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sample/pages/homepage/homepagelayout.dart';
 import 'package:sample/pages/login/loginoption.dart';
+import 'package:sample/pages/login/otpPage.dart';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -56,7 +56,10 @@ class UserLoginPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const HomePage(title: 'Home Page');
+                  return OtpPage(
+                    title: 'Home Page',
+                    phoneNumber: '568-789-485',
+                  );
                 }));
               },
               // ignore: prefer_const_constructors
