@@ -27,25 +27,18 @@ class UserLoginPage extends StatelessWidget {
               height: 80,
             ),
             TextField(
-              decoration: const InputDecoration(
-                  hintText: "Enter your Customer Identification Number",
-                  border: OutlineInputBorder()),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
-                FilteringTextInputFormatter.digitsOnly
+                FilteringTextInputFormatter.allow(RegExp('a-z[A-Z0-9]')),
               ], // Only numbers can be entered
+              decoration: InputDecoration(
+                  labelText: 'Consumer ID',
+                  helperText: 'Enter Your Consumer ID',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50))),
             ),
             const SizedBox(
               height: 5,
-            ),
-            TextField(
-              decoration: const InputDecoration(
-                  hintText: "Enter your Registered Phone Number",
-                  border: OutlineInputBorder()),
-              keyboardType: TextInputType.number,
-              inputFormatters: <TextInputFormatter>[
-                FilteringTextInputFormatter.digitsOnly
-              ], // Only numbers can be entered
             ),
             const SizedBox(
               height: 80,

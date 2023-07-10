@@ -3,10 +3,24 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+
 String year = '2022';
 String csvFileName = 'sample.csv';
 String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
-List mainList = [];
+List mainList = [
+  ['JAN', 'N/A', 'N/A'],
+  ['FEB', 'N/A', 'N/A'],
+  ['MAR', 'N/A', 'N/A'],
+  ['APR', 'N/A', 'N/A'],
+  ['MAY', 'N/A', 'N/A'],
+  ['JUN', 'N/A', 'N/A'],
+  ['JUL', 'N/A', 'N/A'],
+  ['AUG', 'N/A', 'N/A'],
+  ['SEP', 'N/A', 'N/A'],
+  ['OCT', 'N/A', 'N/A'],
+  ['NOV', 'N/A', 'N/A'],
+  ['DEC', 'N/A', 'N/A']
+];
 
 class PaymentHistoryPage extends StatefulWidget {
   const PaymentHistoryPage({Key? key}) : super(key: key);
@@ -17,6 +31,17 @@ class PaymentHistoryPage extends StatefulWidget {
 
 class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
 // Initial Selected Value
+  // Initial Selected Value
+  String dropdownvalue = 'SELECT YEAR';
+
+  // List of items in our dropdown menu
+  var items = [
+    'SELECT YEAR',
+    '2020',
+    '2021',
+    '2022',
+    '2023',
+  ];
 
   void fetchCSVData() async {
     final url =
@@ -32,14 +57,13 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
 
     setState(() {
       mainList = tempList;
+
+      if (items.contains('SELECT YEAR')) {
+        items.remove('SELECT YEAR');
+      }
     });
   }
 
-  @override
-  // ignore: must_call_super
-  initState() {
-    fetchCSVData();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +71,29 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
       body: Center(
         child: Column(
           children: [
+            DropdownButton(
+              // Initial Value
+              value: dropdownvalue,
+
+              // Down Arrow Icon
+              icon: const Icon(Icons.keyboard_arrow_down),
+
+              // Array list of items
+              items: items.map((String items) {
+                return DropdownMenuItem(
+                  value: items,
+                  child: Text(items),
+                );
+              }).toList(),
+              // After selecting the desired option,it will
+              // change button value to selected value
+              onChanged: (String? newValue) {
+                setState(() {
+                  dropdownvalue = newValue!;
+                  fetchCSVData();
+                });
+              },
+            ),
             const SizedBox(
               height: 150,
             ),
