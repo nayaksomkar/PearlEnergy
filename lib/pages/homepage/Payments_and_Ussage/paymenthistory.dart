@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-
 String year = '2022';
 String csvFileName = 'sample.csv';
 String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
@@ -64,11 +63,12 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+        body: Center(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             DropdownButton(
@@ -333,6 +333,6 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
           ],
         ),
       ),
-    );
+    ));
   }
 }

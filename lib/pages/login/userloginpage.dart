@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:sample/pages/login/loginoption.dart';
 import 'package:sample/pages/login/otpPage.dart';
 
+late String consumerID;
+late String mobileNumber;
+
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -27,15 +30,24 @@ class UserLoginPage extends StatelessWidget {
               height: 80,
             ),
             TextField(
-              keyboardType: TextInputType.number,
-              inputFormatters: <TextInputFormatter>[
-                FilteringTextInputFormatter.allow(RegExp('a-z[A-Z0-9]')),
-              ], // Only numbers can be entered
+              maxLength: 6,
               decoration: InputDecoration(
                   labelText: 'Consumer ID',
-                  helperText: 'Enter Your Consumer ID',
+                  helperText: "Enter your unique Consumer ID",
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(50))),
+              keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.allow(RegExp('[a-zA-Z0-9]')),
+              ], // Only numbers can be entered
+              onChanged: (value) {
+                if (value.length == 6) {
+                  FocusScope.of(context).nextFocus();
+                  consumerID = value;
+
+                  
+                }
+              },
             ),
             const SizedBox(
               height: 5,
@@ -51,7 +63,7 @@ class UserLoginPage extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return OtpPage(
                     title: 'Home Page',
-                    phoneNumber: '568-789-485',
+                    phoneNumber: consumerID,
                   );
                 }));
               },
