@@ -66,273 +66,285 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              "PAYMENT HISTORY OF YEAR $dropdownvalue",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ), //A
         body: Center(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            DropdownButton(
-              // Initial Value
-              value: dropdownvalue,
-
-              // Down Arrow Icon
-              icon: const Icon(Icons.keyboard_arrow_down),
-
-              // Array list of items
-              items: items.map((String items) {
-                return DropdownMenuItem(
-                  value: items,
-                  child: Text(items),
-                );
-              }).toList(),
-              // After selecting the desired option,it will
-              // change button value to selected value
-              onChanged: (String? newValue) {
-                setState(() {
-                  dropdownvalue = newValue!;
-                  fetchCSVData();
-                });
-              },
-            ),
-            const SizedBox(
-              height: 150,
-            ),
-            Table(
-              border: TableBorder.all(color: Colors.white, width: 1.5),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
               children: [
-                TableRow(children: [
-                  Text(
-                    'MONTH',
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
+                DropdownButton(
+                  // Initial Value
+                  value: dropdownvalue,
+
+                  // Down Arrow Icon
+                  icon: const Icon(Icons.keyboard_arrow_down),
+
+                  // Array list of items
+                  items: items.map((String items) {
+                    return DropdownMenuItem(
+                      value: items,
+                      child: Text(items),
+                    );
+                  }).toList(),
+                  // After selecting the desired option,it will
+                  // change button value to selected value
+                  onChanged: (String? newValue) {
+                    setState(() {
+                      dropdownvalue = newValue!;
+                      fetchCSVData();
+                    });
+                  },
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Table(
+                  border: TableBorder.all(color: Colors.white, width: 1.5),
+                  children: [
+                    TableRow(children: [
+                      Text(
+                        'MONTH',
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        'BILL',
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        'PAYMENT DATE',
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[0][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[0][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[0][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[1][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[1][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[1][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[2][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[2][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[2][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[3][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[3][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[3][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[4][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[4][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[4][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[5][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[5][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[5][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[6][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[6][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[6][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[7][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[7][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[7][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[8][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[8][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[8][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[9][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[9][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[9][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[10][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[10][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[10][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                    TableRow(children: [
+                      Text(
+                        mainList[11][0],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[11][1],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        mainList[11][2],
+                        style: TextStyle(fontSize: 15.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ]),
+                  ],
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                const Image(
+                  image: AssetImage(
+                    'assets/images/LogoTransparent.png',
                   ),
-                  Text(
-                    'BILL',
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    'PAYMENT DATE',
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[0][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[0][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[0][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[1][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[1][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[1][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[2][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[2][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[2][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[3][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[3][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[3][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[4][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[4][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[4][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[5][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[5][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[5][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[6][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[6][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[6][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[7][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[7][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[7][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[8][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[8][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[8][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[9][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[9][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[9][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[10][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[10][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[10][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
-                TableRow(children: [
-                  Text(
-                    mainList[11][0],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[11][1],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    mainList[11][2],
-                    style: TextStyle(fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ]),
+                  height: 150,
+                  width: 150,
+                ),
               ],
             ),
-            const Image(
-              image: AssetImage(
-                'assets/images/LogoTransparent.png',
-              ),
-              height: 150,
-              width: 150,
-            ),
-          ],
-        ),
-      ),
-    ));
+          ),
+        ));
   }
 }
