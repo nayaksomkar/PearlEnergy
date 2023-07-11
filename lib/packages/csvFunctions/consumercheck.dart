@@ -4,30 +4,42 @@ String csvFilePath =
     '/nayaksomkar/PearlEnergy/master/data/csv/user/accountDetails.csv';
 
 chkUser() async {
-  List tempList = [];
-  String data;
+  List consumerIDList = [];
+  List mobileNumberList = [];
 
-  final url = Uri.https('raw.githubusercontent.com', '$csvFilePath');
+  final urlAddress = Uri.https('raw.githubusercontent.com', '$csvFilePath');
 
-  data = await http.read(url);
-  var temp = data.split('\n');
+  String urlData = await http.read(urlAddress);
+  var tempData = urlData.split('\n');
 
-  for (final elements in temp) {
+  for (final elements in tempData) {
     final element = elements.split(',');
 
     if (element[0] != 'CONSUMER_ID') {
       //print(element[0]);
-      tempList.add(element[0]);
+      consumerIDList.add(element[0]);
+      mobileNumberList.add(element[1]);
     }
   }
 
-  return tempList;
+  return {
+    "ConsumerIDList": consumerIDList,
+    "MobileNumberList": mobileNumberList
+  };
 }
 
 void main() {
   chkUser().then((value) {
-    if (value.contains('ABC821')) {
+    if (value["ConsumerIDList"].contains('ABC821')) {
       print('found');
+      var mobileNumber =
+          value["MobileNumberList"][value["ConsumerIDList"].indexOf('ABC821')];
+      mobileNumber = mobileNumber.substring(
+        8,
+      );
+      print(mobileNumber);
+    } else {
+      print('not found');
     }
   });
 }
