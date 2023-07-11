@@ -34,11 +34,15 @@ class OtpPage extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
-                Text('Verification Code'),
+                Text(
+                  'Verification Code',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 SizedBox(
                   height: 10,
                 ),
-                Text('We have sent the code to $phoneNumber'),
+                Text(
+                    'OTP has been sent to an phone number ending with "**$phoneNumber"'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

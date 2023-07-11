@@ -48,12 +48,18 @@ class UserLoginPage extends StatelessWidget {
                   consumerID = value;
 
                   checkUser().then((value) {
-                    if (value.contains(consumerID)) {
+                    if (value["ConsumerIDList"].contains(consumerID)) {
+                      var mobileNumber = value["MobileNumberList"]
+                          [value["ConsumerIDList"].indexOf('ABC821')];
+
+                      mobileNumber = mobileNumber.substring(
+                        8,
+                      );
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
                         return OtpPage(
                           title: 'Home Page',
-                          phoneNumber: consumerID,
+                          phoneNumber: mobileNumber,
                         );
                       }));
                     } else {
@@ -78,12 +84,18 @@ class UserLoginPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
                 checkUser().then((value) {
-                  if (value.contains(consumerID)) {
+                  if (value["ConsumerIDList"].contains(consumerID)) {
+                    var mobileNumber = value["MobileNumberList"]
+                        [value["ConsumerIDList"].indexOf('ABC821')];
+
+                    mobileNumber = mobileNumber.substring(
+                      8,
+                    );
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
                       return OtpPage(
                         title: 'Home Page',
-                        phoneNumber: consumerID,
+                        phoneNumber: mobileNumber,
                       );
                     }));
                   } else {

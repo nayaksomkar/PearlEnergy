@@ -4,9 +4,10 @@ String csvFilePath =
     '/nayaksomkar/PearlEnergy/master/data/csv/user/accountDetails.csv';
 
 checkUser() async {
-  List consumerIDList = [];
+   List consumerIDList = [];
   List mobileNumberList = [];
 
+  // ignore: unnecessary_string_interpolations
   final urlAddress = Uri.https('raw.githubusercontent.com', '$csvFilePath');
 
   String urlData = await http.read(urlAddress);
@@ -22,5 +23,8 @@ checkUser() async {
     }
   }
 
-  return consumerIDList;
+  return {
+    "ConsumerIDList": consumerIDList,
+    "MobileNumberList": mobileNumberList
+  };
 }
