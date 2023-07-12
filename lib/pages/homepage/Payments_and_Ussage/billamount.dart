@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sample/pages/homepage/Payments_and_Ussage/paymentdone.dart';
 
 class AmountPage extends StatefulWidget {
   const AmountPage({Key? key}) : super(key: key);
@@ -74,7 +75,12 @@ class _AmountPageState extends State<AmountPage> {
                               height: 15,
                             ),
                             ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const PaymentDonePage();
+                                  }));
+                                },
                                 child: Text(
                                   'Pay Now',
                                   style: TextStyle(

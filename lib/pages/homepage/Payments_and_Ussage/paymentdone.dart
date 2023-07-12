@@ -52,7 +52,7 @@ class _PaymentDonePageState extends State<PaymentDonePage> {
                       height: 10,
                     ),
                     Text(
-                      'BILLED AMOUNT : $bill',
+                      'PAID AMOUNT : $bill',
                       textAlign: TextAlign.start,
                     ),
                     SizedBox(
@@ -62,25 +62,7 @@ class _PaymentDonePageState extends State<PaymentDonePage> {
                         alignment: Alignment.center,
                         child: Column(
                           children: [
-                            Text(
-                              '$bill',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            ElevatedButton(
-                                onPressed: () {},
-                                child: Text(
-                                  'Pay Now',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15),
-                                )),
+                            Image.asset('assets/gif/PaymentDoneGIF.gif')
                           ],
                         )),
                     SizedBox(

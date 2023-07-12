@@ -80,6 +80,7 @@ flutter:
     - assets/images/IconTransparent.png
     - assets/images/NoInternetConnection.jpg
     - assets/csv/Payments_and_Ussage/ABC8001.csv
+    - assets/gif/PaymentDoneGIF.gif
     
     
 
