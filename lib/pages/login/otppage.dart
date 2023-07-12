@@ -42,7 +42,7 @@ class OtpPage extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                    'OTP has been sent to an phone number ending with "**$phoneNumber"'),
+                    '(OTP) has been sent to a phone number ending with "**$phoneNumber"'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

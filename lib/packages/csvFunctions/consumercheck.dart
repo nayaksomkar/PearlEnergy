@@ -7,7 +7,7 @@ chkUser() async {
   List consumerIDList = [];
   List mobileNumberList = [];
 
-  final urlAddress = Uri.https('raw.githubusercontent.com', '$csvFilePath');
+  final urlAddress = Uri.https('raw.githubusercontent.com', csvFilePath);
 
   String urlData = await http.read(urlAddress);
   var tempData = urlData.split('\n');
