@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sample/main.dart';
 import 'package:sample/pages/homepage/Payments_and_Ussage/paymenthistory.dart';
+import 'package:sample/pages/homepage/Payments_and_Ussage/paymentstatus.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
@@ -61,7 +62,8 @@ class HomePage extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          '     Payment History',
+                          'Payment History',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
@@ -74,7 +76,12 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return const PaymentStatusPage();
+                              }));
+                            },
                             icon: const Icon(
                               Icons.price_check_rounded,
                               size: 40,
@@ -83,7 +90,8 @@ class HomePage extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          '    Payment Status & Bill',
+                          'Payment Status & Bill',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
@@ -95,9 +103,10 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-           // ignore: prefer_const_constructors
-           Text(
+                // ignore: prefer_const_constructors
+                Text(
                   'Ussage and Consumption',
+                  textAlign: TextAlign.center,
                   // ignore: prefer_const_constructors
                   style: TextStyle(
                     color: Colors.amberAccent,
@@ -132,6 +141,7 @@ class HomePage extends StatelessWidget {
                         ),
                         Text(
                           'Ussage History',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
@@ -154,6 +164,7 @@ class HomePage extends StatelessWidget {
                         ),
                         Text(
                           'Current Ussage',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
@@ -165,9 +176,10 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-           // ignore: prefer_const_constructors
-           Text(
+                // ignore: prefer_const_constructors
+                Text(
                   'Manage Account',
+                  textAlign: TextAlign.center,
                   // ignore: prefer_const_constructors
                   style: TextStyle(
                     color: Colors.amberAccent,
@@ -193,7 +205,8 @@ class HomePage extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          '   Account',
+                          'Account',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
@@ -220,7 +233,8 @@ class HomePage extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          '       Logout',
+                          'Logout',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.white.withOpacity(0.7)),
