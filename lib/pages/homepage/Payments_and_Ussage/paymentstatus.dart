@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sample/pages/homepage/Payments_and_Ussage/billamount.dart';
 
 class PaymentStatusPage extends StatefulWidget {
   const PaymentStatusPage({Key? key}) : super(key: key);
@@ -95,7 +96,12 @@ class _PaymentStatusPageState extends State<PaymentStatusPage> {
                     Align(
                       alignment: Alignment.center,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return const AmountPage();
+                            }));
+                          },
                           child: Text(
                             'Pay Now',
                             style: TextStyle(
@@ -112,7 +118,7 @@ class _PaymentStatusPageState extends State<PaymentStatusPage> {
           ),
         ),
         SizedBox(
-          height: 100,
+          height: 200,
         ),
         const Image(
           image: AssetImage(
