@@ -62,7 +62,21 @@ class _PaymentDonePageState extends State<PaymentDonePage> {
                         alignment: Alignment.center,
                         child: Column(
                           children: [
-                            Image.asset('assets/gif/PaymentDoneGIF.gif')
+                            const Image(
+                              image: AssetImage(
+                                'assets/gif/PaymentDoneGIF.gif',
+                              ),
+                              height: 100,
+                              width: 100,
+                            ),
+                            Text(
+                              'PAYMENT DONE',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.green,
+                              ),
+                            )
                           ],
                         )),
                     SizedBox(
