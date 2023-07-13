@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/packages/csvfunctions.dart';
-import 'package:sample/pages/login/loginoption.dart';
 import 'package:sample/pages/login/otpPage.dart';
 import 'package:sample/pages/nointernet.dart';
 
-late String consumerID;
-String mobileNumber = '780';
+String consumerID = '';
+String mobileNumber = '';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -50,7 +49,7 @@ class UserLoginPage extends StatelessWidget {
                   checkUser().then((value) {
                     if (value["ConsumerIDList"].contains(consumerID)) {
                       var mobileNumber = value["MobileNumberList"]
-                          [value["ConsumerIDList"].indexOf('ABC821')];
+                          [value["ConsumerIDList"].indexOf(value)];
 
                       mobileNumber = mobileNumber.substring(
                         8,
@@ -102,8 +101,40 @@ class UserLoginPage extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
+                checkUser().then((userDetailsMap) {
+                  if (consumerID.length == 6) {
+                    if (userDetailsMap["ConsumerIDList"].contains(consumerID)) {
+                      var mobileNumber = userDetailsMap["MobileNumberList"][
+                          userDetailsMap["ConsumerIDList"].indexOf(consumerID)];
+
+                      mobileNumber = mobileNumber.substring(
+                        8,
+                      );
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return OtpPage(
+                          title: 'Home Page',
+                          phoneNumber: mobileNumber,
+                        );
+                      }));
+                    } else {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const NoInternetPage();
+                      }));
+                    }
+                  } else {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const NoInternetPage();
+                    }));
+                  }
+                });
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginOption(title: 'LoginOption');
+                  return OtpPage(
+                    title: 'Home Page',
+                    phoneNumber: mobileNumber,
+                  );
                 }));
               },
               // ignore: prefer_const_constructors
