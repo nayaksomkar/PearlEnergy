@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sample/pages/homepage/homepagelayout.dart';
 
 class PaymentDonePage extends StatefulWidget {
   const PaymentDonePage({Key? key}) : super(key: key);
@@ -66,22 +67,41 @@ class _PaymentDonePageState extends State<PaymentDonePage> {
                               image: AssetImage(
                                 'assets/gif/PaymentDoneGIF.gif',
                               ),
-                              height: 100,
-                              width: 100,
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(
+                              height: 20,
                             ),
                             Text(
                               'PAYMENT DONE',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
-                                color: Colors.green,
+                                color: Colors.greenAccent,
                               ),
-                            )
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return const HomePage(title: 'LoginOption');
+                                }));
+                              },
+                              child: Text(
+                                'Return To Home Page',
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
                           ],
                         )),
-                    SizedBox(
-                      height: 20,
-                    ),
                   ],
                 ),
               ),
@@ -89,7 +109,7 @@ class _PaymentDonePageState extends State<PaymentDonePage> {
           ),
         ),
         SizedBox(
-          height: 100,
+          height: 50,
         ),
         const Image(
           image: AssetImage(

@@ -99,7 +99,7 @@ class _AmountPageState extends State<AmountPage> {
           ),
         ),
         SizedBox(
-          height: 100,
+          height: 250,
         ),
         const Image(
           image: AssetImage(
