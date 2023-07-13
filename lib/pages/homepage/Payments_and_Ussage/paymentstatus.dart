@@ -18,8 +18,8 @@ class _PaymentStatusPageState extends State<PaymentStatusPage> {
   String consumerID = 'ABC821';
   String paymentDate = '29-06-2023';
   String paymentStatus = '"Not Paid"';
-  String bill = '6969 (INR)';
-  String ussage = '6969 kWh';
+  String bill = '784 (INR)';
+  String ussage = '784 kWh';
   String billOf = 'JULY 2023';
   String lastDate = '30-07-2023';
 

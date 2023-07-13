@@ -14,7 +14,7 @@ class _AmountPageState extends State<AmountPage> {
 // Initial Selected Value
   // Initial Selected Value
   String consumerName = 'Akshay Sha'.toUpperCase();
-  String bill = '6969 (INR)';
+  String bill = '784 (INR)';
   String consumerID = 'ABC821';
 
   @override

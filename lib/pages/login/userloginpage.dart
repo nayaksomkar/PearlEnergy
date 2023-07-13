@@ -6,7 +6,7 @@ import 'package:sample/pages/login/otpPage.dart';
 import 'package:sample/pages/nointernet.dart';
 
 late String consumerID;
-late String mobileNumber;
+String mobileNumber = '780';
 
 class UserLoginPage extends StatelessWidget {
   const UserLoginPage({Key? key, required this.title}) : super(key: key);
@@ -83,28 +83,12 @@ class UserLoginPage extends StatelessWidget {
                   backgroundColor: MaterialStatePropertyAll(Colors.amber),
                   foregroundColor: MaterialStatePropertyAll(Colors.black)),
               onPressed: () {
-                checkUser().then((value) {
-                  if (value["ConsumerIDList"].contains(consumerID)) {
-                    var mobileNumber = value["MobileNumberList"]
-                        [value["ConsumerIDList"].indexOf('ABC821')];
-
-                    mobileNumber = mobileNumber.substring(
-                      8,
-                    );
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return OtpPage(
-                        title: 'Home Page',
-                        phoneNumber: mobileNumber,
-                      );
-                    }));
-                  } else {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return const NoInternetPage();
-                    }));
-                  }
-                });
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return OtpPage(
+                    title: 'Home Page',
+                    phoneNumber: mobileNumber,
+                  );
+                }));
               },
               // ignore: prefer_const_constructors
               child: Text(
