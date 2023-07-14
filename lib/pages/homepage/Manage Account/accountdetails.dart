@@ -15,12 +15,11 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
   // Initial Selected Value
   String consumerName = 'Akshay Sha'.toUpperCase();
   String consumerID = 'ABC821';
-  String paymentDate = '29-06-2023';
-  String paymentStatus = '"Not Paid"';
-  String bill = '784 (INR)';
-  String ussage = '784 kWh';
-  String billOf = 'JULY 2023';
-  String lastDate = '30-07-2023';
+  String consumerSex = 'M';
+  String consumerEmailID = 'akshaysha@mail.com';
+  String consumerMobileNumber = '806-364-780';
+  String consumerAddress =
+      'S/2 Tulsi Mahal Navghar Cross Talav Road Bhayander - Mumbai - Puducherry - 401105 - India';
 
   @override
   Widget build(BuildContext context) {
@@ -61,36 +60,32 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
                           height: 10,
                         ),
                         Text(
-                          'ELECTRICITY USED : $ussage',
+                          'SEX : $consumerSex',
                           textAlign: TextAlign.start,
                         ),
                         SizedBox(
                           height: 5,
                         ),
                         Text(
-                          'BILLED AMOUNT : $bill',
+                          'EMAIL ID : $consumerEmailID',
                           textAlign: TextAlign.start,
                         ),
                         SizedBox(
                           height: 5,
                         ),
                         Text(
-                          'BILLING MONTH : $billOf',
+                          'MOBILE NUMBER : $consumerMobileNumber',
                           textAlign: TextAlign.start,
                         ),
                         SizedBox(
                           height: 5,
                         ),
                         Text(
-                          'LAST DATE : $lastDate',
+                          'ADDRESS : $consumerAddress',
                           textAlign: TextAlign.start,
                         ),
                         SizedBox(
                           height: 5,
-                        ),
-                        Text(
-                          'STATUS : $paymentStatus',
-                          textAlign: TextAlign.start,
                         ),
                         SizedBox(
                           height: 40,
