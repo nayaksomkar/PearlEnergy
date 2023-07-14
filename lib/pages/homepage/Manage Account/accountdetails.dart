@@ -19,7 +19,8 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
   String consumerEmailID = 'akshaysha@mail.com';
   String consumerMobileNumber = '806-364-780';
   String consumerAddress =
-      'S/2 Tulsi Mahal Navghar Cross Talav Road Bhayander - Mumbai - Puducherry - 401105 - India';
+      '\nS/2 Tulsi Mahal Navghar Cross Talav Road Bhayander | Mumbai - Puducherry - 401105 - India'
+          .replaceAll("|", "\n");
 
   @override
   Widget build(BuildContext context) {
@@ -85,10 +86,7 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
                           textAlign: TextAlign.start,
                         ),
                         SizedBox(
-                          height: 5,
-                        ),
-                        SizedBox(
-                          height: 40,
+                          height: 30,
                         ),
                         Align(
                           child: Center(
