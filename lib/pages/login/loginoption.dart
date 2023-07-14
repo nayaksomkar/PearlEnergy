@@ -34,8 +34,8 @@ class LoginOption extends StatelessWidget {
                   }));
                 },
                 // ignore: prefer_const_constructors
-                child:Text(
-                  'Continue to Login',
+                child: Text(
+                  'User Login',
                   // ignore: prefer_const_constructors
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
@@ -43,18 +43,20 @@ class LoginOption extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const NewUserPage(title: 'User Login');
-                  }));
-                },
+              ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                    foregroundColor: MaterialStatePropertyAll(Colors.black)),
+                onPressed: () {},
                 // ignore: prefer_const_constructors
-                child:  Text(
-                  'New User',
+                child: Text(
+                  'Admin Login',
                   // ignore: prefer_const_constructors
-                  style: TextStyle(fontSize: 15),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
+              ),
+              const SizedBox(
+                height: 10,
               ),
               TextButton(
                 onPressed: () {

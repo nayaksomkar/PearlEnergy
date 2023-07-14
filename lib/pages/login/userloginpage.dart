@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sample/packages/csvfunctions.dart';
+import 'package:sample/pages/login/newuser.dart';
 import 'package:sample/pages/login/otpPage.dart';
 import 'package:sample/pages/nointernet.dart';
 
@@ -96,6 +97,29 @@ class UserLoginPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const NewUserPage(
+                      title: 'New User',
+                    );
+                  }));
+                },
+                child: RichText(
+                    text: const TextSpan(
+                        style: TextStyle(
+                            color: Colors.grey), //style for all textspan
+                        children: [
+                      TextSpan(
+                          text: "Don't have an account yet?",
+                          style: TextStyle(fontSize: 15)),
+                      TextSpan(
+                          text: "  New User?",
+                          style: TextStyle(color: Colors.amber, fontSize: 15)),
+                    ]))),
             const SizedBox(
               height: 20,
             ),

@@ -3,6 +3,8 @@ import 'package:sample/main.dart';
 import 'package:sample/pages/homepage/Payments_and_Ussage/paymenthistory.dart';
 import 'package:sample/pages/homepage/Payments_and_Ussage/paymentstatus.dart';
 
+import 'Manage Account/accountdetails.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
   final String title;
@@ -198,7 +200,12 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return const AccountDetailsPage();
+                                }));
+                              },
                               icon: const Icon(
                                 Icons.person_2_rounded,
                                 size: 40,
