@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sample/pages/nointernet.dart';
-import 'package:sample/pages/login/newuser.dart';
 import 'package:sample/pages/login/userloginpage.dart';
 
 class LoginOption extends StatelessWidget {
