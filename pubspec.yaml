@@ -47,11 +47,12 @@ dev_dependencies:
 
 flutter_launcher_icons:
   android: "launcher_icon"
-  image_path: "assets/images/Icon.png"
+  ios: True
+  image_path: "assets/images/IconTransparent.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
     generate: true
-    image_path: "assets/images/Icon.png"
+    image_path: "assets/images/IconTransparent.png"
     #background_color: "#hexcode"
     #theme_color: "#hexcode"
 
