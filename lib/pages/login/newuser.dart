@@ -9,9 +9,27 @@ class NewUserPage extends StatelessWidget {
   _sendMailToPearlEnergy() async {
     final Uri params = Uri(
       scheme: 'mailto',
-      path: 'pearlenergy@jk.in',
+      path: 'contact@pearl.energy',
       query: 'subject=Inquiry from New User',
     );
+    if (await canLaunchUrl(params)) {
+      await launchUrl(params);
+    } else {
+      throw 'Could not launch $params';
+    }
+  }
+
+  _callPearlEnergy() async {
+    final Uri params = Uri(scheme: 'tel', path: '805-509');
+    if (await canLaunchUrl(params)) {
+      await launchUrl(params);
+    } else {
+      throw 'Could not launch $params';
+    }
+  }
+
+  _sendMessageToPearlEnergy() async {
+    final Uri params = Uri(scheme: 'sms', path: '805-509');
     if (await canLaunchUrl(params)) {
       await launchUrl(params);
     } else {
@@ -49,18 +67,6 @@ class NewUserPage extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              const Text('Contact details'),
-              const SizedBox(
-                height: 20,
-              ),
-              const Text('Tollfree Helpline Number  :  805-509'),
-              const SizedBox(
-                height: 20,
-              ),
-              const Text('Leave us an Email at pearl@energy.help'),
-              const SizedBox(
-                height: 50,
-              ),
               TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -73,12 +79,32 @@ class NewUserPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 10,
               ),
               TextButton(
                 onPressed: _sendMailToPearlEnergy,
                 child: const Text(
-                  'Mail to us',
+                  'Mail to us at "contact@pearl.energy"',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextButton(
+                onPressed: _callPearlEnergy,
+                child: const Text(
+                  'Give us a Call at "805-509"',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextButton(
+                onPressed: _sendMessageToPearlEnergy,
+                child: const Text(
+                  'Send us a Message at "805-509"',
                   style: TextStyle(fontSize: 15),
                 ),
               ),
