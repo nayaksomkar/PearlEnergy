@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sample/pages/nointernet.dart';
 import 'package:sample/pages/login/userloginpage.dart';
 
 class LoginOption extends StatelessWidget {
@@ -22,55 +21,49 @@ class LoginOption extends StatelessWidget {
             const SizedBox(
               height: 150,
             ),
-            Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-              ElevatedButton(
-                style: const ButtonStyle(
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                // User Login Button
+                ElevatedButton(
+                  style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                    foregroundColor: MaterialStatePropertyAll(Colors.black)),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const UserLoginPage(title: 'User Login');
-                  }));
-                },
-                // ignore: prefer_const_constructors
-                child: Text(
-                  'User Login',
-                  // ignore: prefer_const_constructors
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                    foregroundColor: MaterialStatePropertyAll(Colors.black),
+                  ),
+                  onPressed: () {
+                    // Navigate to UserLoginPage when User Login button is pressed
+                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                      return const UserLoginPage(title: 'User Login');
+                    }));
+                  },
+                  child: const Text(
+                    'User Login',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                style: const ButtonStyle(
+                const SizedBox(
+                  height: 20,
+                ),
+                // Admin Login Button
+                ElevatedButton(
+                  style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                    foregroundColor: MaterialStatePropertyAll(Colors.black)),
-                onPressed: () {},
-                // ignore: prefer_const_constructors
-                child: Text(
-                  'Admin Login',
-                  // ignore: prefer_const_constructors
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                    foregroundColor: MaterialStatePropertyAll(Colors.black),
+                  ),
+                  onPressed: () {
+                    // Add functionality for Admin Login button if needed
+                  },
+                  child: const Text(
+                    'Admin Login',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const NoInternetPage();
-                  }));
-                },
-                // ignore: prefer_const_constructors
-                child: Text(
-                  'Error page',
-                  // ignore: prefer_const_constructors
-                  style: TextStyle(fontSize: 15),
+                const SizedBox(
+                  height: 10,
                 ),
-              )
-            ])
+                // Add more buttons or widgets here as needed
+              ],
+            )
           ],
         ),
       ),
