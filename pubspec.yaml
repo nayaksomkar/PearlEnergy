@@ -31,6 +31,7 @@ dependencies:
   csv: ^5.0.2
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.12  
   http: ^1.0.0
   intl: ^0.18.1
   syncfusion_flutter_datagrid: ^22.1.34

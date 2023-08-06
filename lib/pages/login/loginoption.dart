@@ -32,7 +32,8 @@ class LoginOption extends StatelessWidget {
                   ),
                   onPressed: () {
                     // Navigate to UserLoginPage when User Login button is pressed
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
                       return const UserLoginPage(title: 'User Login');
                     }));
                   },
