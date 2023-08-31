@@ -6,7 +6,7 @@
 
 
 ##### CHANGES MADE SO FAR
-#### NULL
+- [ ] NULL
 
 
 ##### FEATURES TO BE ADDED
@@ -22,8 +22,22 @@
 - [ ] Also add possible warnings.
 
 ### BACKLOGS
-#### NULL
+- [ ] NULL
 
 
 ## TUE, 01 SEP 2023
+### REGULAR
+
+##### BUGS TO BE FIXED
+- [ ] NULL
+
+##### CHANGES MADE SO FAR
+- [ ] NULL
+##### FEATURES TO BE ADDED
+- [ ] NULL
+
+### BACKLOG
+- [ ] NULL
+
+
 
