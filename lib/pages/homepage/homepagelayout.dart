@@ -30,11 +30,8 @@ class HomePage extends StatelessWidget {
                     height: 200,
                     width: 200,
                   ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  // ignore: prefer_const_constructors
-                  Text(
+
+                  const Text(
                     'Payments and Bills',
                     // ignore: prefer_const_constructors
                     style: TextStyle(
@@ -51,19 +48,21 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const PaymentHistoryPage();
-                                }));
-                              },
-                              icon: const Icon(
-                                Icons.payments_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const PaymentHistoryPage();
+                                  }));
+                                },
+                                icon: Image.asset(
+                                  'assets/gif/PaymentHistory.gif',
+                                  height: 100,
+                                  width: 100,
+                                )),
                           ),
                           Text(
                             'Payment History',
@@ -79,19 +78,21 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const PaymentStatusPage();
-                                }));
-                              },
-                              icon: const Icon(
-                                Icons.price_check_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const PaymentStatusPage();
+                                  }));
+                                },
+                                icon: Image.asset(
+                                  'assets/gif/PaymentStatus.gif',
+                                  height: 100,
+                                  width: 100,
+                                )),
                           ),
                           Text(
                             'Payment Status & Bill',
@@ -107,8 +108,8 @@ class HomePage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  // ignore: prefer_const_constructors
-                  Text(
+
+                  const Text(
                     'Ussage and Consumption',
                     textAlign: TextAlign.center,
                     // ignore: prefer_const_constructors
@@ -129,19 +130,21 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const PaymentHistoryPage();
-                                }));
-                              },
-                              icon: const Icon(
-                                Icons.history_edu_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const PaymentHistoryPage();
+                                  }));
+                                },
+                                icon: Image.asset(
+                                  'assets/gif/UssageHistory.gif',
+                                  height: 100,
+                                  width: 100,
+                                )),
                           ),
                           Text(
                             'Ussage History',
@@ -152,7 +155,7 @@ class HomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(width: 100),
+                      const SizedBox(width: 145),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -204,19 +207,21 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const AccountDetailsPage();
-                                }));
-                              },
-                              icon: const Icon(
-                                Icons.person_2_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const AccountDetailsPage();
+                                  }));
+                                },
+                                icon: Image.asset(
+                                  'assets/gif/account.gif',
+                                  height: 100,
+                                  width: 100,
+                                )),
                           ),
                           Text(
                             'Account',
@@ -227,24 +232,26 @@ class HomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(width: 145),
+                      const SizedBox(width: 155),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const MyApp();
-                                }));
-                              },
-                              icon: const Icon(
-                                Icons.login_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return const MyApp();
+                                  }));
+                                },
+                                icon: Image.asset(
+                                  'assets/gif/logout.gif',
+                                  height: 100,
+                                  width: 100,
+                                )),
                           ),
                           Text(
                             'Logout',
