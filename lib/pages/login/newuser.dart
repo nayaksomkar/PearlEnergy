@@ -58,12 +58,7 @@ class NewUserPage extends StatelessWidget {
                 height: 80,
               ),
               const Text(
-                  "For site verification and connection, book an appointment now."),
-              const SizedBox(
-                height: 5,
-              ),
-              const Text(
-                  "Contact your nearest Pearl Energy office or give us a call or Email."),
+                  "For site verification and connectiongive us a call or Email."),
               const SizedBox(
                 height: 50,
               ),
@@ -81,33 +76,97 @@ class NewUserPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              TextButton(
-                onPressed: _sendMailToPearlEnergy,
-                child: const Text(
-                  'Mail to us at "contact@pearl.energy"',
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextButton(
-                onPressed: _callPearlEnergy,
-                child: const Text(
-                  'Give us a Call at "805-509"',
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextButton(
-                onPressed: _sendMessageToPearlEnergy,
-                child: const Text(
-                  'Send us a Message at "805-509"',
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
+              const Text('Contact us via'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 80,
+                        width: 80,
+                        child: IconButton(
+                          onPressed: () {
+                            // Add your code here
+                          },
+                          icon: Image.asset(
+                            'assets/gif/email.gif',
+                            height: 100,
+                            width: 100,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Send us an email',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 14, color: Colors.white.withOpacity(0.7)),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 80,
+                        width: 80,
+                        child: IconButton(
+                          onPressed: () {
+                            // Add your code here
+                          },
+                          icon: Image.asset(
+                            'assets/gif/phone.gif',
+                            height: 100,
+                            width: 100,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Give us a call',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 14, color: Colors.white.withOpacity(0.7)),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 80,
+                        width: 80,
+                        child: IconButton(
+                          onPressed: () {
+                            // Add your code here
+                          },
+                          icon: Image.asset(
+                            'assets/gif/message.gif',
+                            height: 100,
+                            width: 100,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Send us a message',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 14, color: Colors.white.withOpacity(0.7)),
+                      )
+                    ],
+                  )
+                ],
+              )
             ],
           ),
         ),
@@ -115,3 +174,11 @@ class NewUserPage extends StatelessWidget {
     );
   }
 }
+
+/*
+Container(
+  child: 
+  ),
+)
+
+*/
