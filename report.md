@@ -20,7 +20,7 @@
 - [ ] Add payments Options.
 - [ ] Add a timer screen before showing that "Payment Done GIF".
 - [ ] Also add possible warnings.
-- [ ] Add Phone and Call icon at the new user page.
+- [x] Add Phone and Call icon at the new user page.
 
 ### BACKLOGS
 - [ ] NULL
