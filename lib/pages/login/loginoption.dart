@@ -62,6 +62,16 @@ class LoginOption extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
+                InkWell(
+                  onTap: () {
+                    // Add your code here
+                  },
+                  child: Image.asset(
+                    'CurrentUssage.gif',
+                    height: 50,
+                    width: 50,
+                  ),
+                )
                 // Add more buttons or widgets here as needed
               ],
             )
