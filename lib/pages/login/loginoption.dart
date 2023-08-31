@@ -59,17 +59,15 @@ class LoginOption extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                InkWell(
-                  onTap: () {
+
+                IconButton(
+                  onPressed: () {
                     // Add your code here
                   },
-                  child: Image.asset(
+                  icon: Image.asset(
                     'CurrentUssage.gif',
-                    height: 50,
-                    width: 50,
+                    height: 150,
+                    width: 150,
                   ),
                 )
                 // Add more buttons or widgets here as needed
