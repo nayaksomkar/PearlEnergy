@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.black, // Set the primary color to black
         primarySwatch: Colors.amber, // Set the primary swatch color to amber
       ),
-      home: const LoginOption(title: 'LoginOption'), // Set the home page to the LoginOption widget
+      home: const LoginOption(
+          title: 'LoginOption'), // Set the home page to the LoginOption widget
       debugShowCheckedModeBanner: false, // Disable the debug mode banner
     );
   }
