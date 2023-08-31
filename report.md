@@ -17,6 +17,9 @@
 - [ ] If match found then make the textfeild green colour to indiacate that it's correct.
 - [ ] If match not found shake the screen and reopen that page ("OTP" & "ConsumerID" page).
 - [ ] If not connected to internet guide to Internet not connected error page.
+- [ ] Add payments Options.
+- [ ] Add a timer screen before showing that "Payment Done GIF".
+- [ ] Also add possible warnings.
 
 ### BACKLOGS
 #### NULL
