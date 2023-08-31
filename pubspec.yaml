@@ -84,6 +84,13 @@ flutter:
     - assets/csv/Payments_and_Ussage/ABC8001.csv
     - assets/gif/PaymentDoneGIF.gif
     - assets/gif/CurrentUssage.gif
+    - assets/gif/account.gif
+    - assets/gif/email.gif
+    - assets/gif/logout.gif
+    - assets/gif/PaymentHistory.gif
+    - assets/gif/PaymentStatus.gif
+    - assets/gif/phone.gif
+    - assets/gif/UssageHistory.gif
     
     
 

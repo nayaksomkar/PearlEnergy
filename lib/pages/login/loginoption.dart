@@ -59,18 +59,6 @@ class LoginOption extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-
-                IconButton(
-                  onPressed: () {
-                    // Add your code here
-                  },
-                  icon: Image.asset(
-                    'CurrentUssage.gif',
-                    height: 150,
-                    width: 150,
-                  ),
-                )
-                // Add more buttons or widgets here as needed
               ],
             )
           ],

@@ -157,14 +157,19 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.stacked_bar_chart_rounded,
-                                size: 40,
-                              )),
-                          const SizedBox(
-                            height: 15,
+                          SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: IconButton(
+                              onPressed: () {
+                                // Add your code here
+                              },
+                              icon: Image.asset(
+                                'assets/gif/CurrentUssage.gif',
+                                height: 100,
+                                width: 100,
+                              ),
+                            ),
                           ),
                           Text(
                             'Current Ussage',
