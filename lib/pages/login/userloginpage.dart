@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pearlenergy/main.dart';
 import 'package:pearlenergy/packages/csvfunctions.dart';
 import 'package:pearlenergy/pages/login/newuser.dart';
 import 'package:pearlenergy/pages/login/otpPage.dart';
@@ -85,12 +86,35 @@ class UserLoginPage extends StatelessWidget {
                   foregroundColor: MaterialStatePropertyAll(Colors.black),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return OtpPage(
-                      title: 'Home Page',
-                      phoneNumber: mobileNumber,
-                    );
-                  }));
+                  checkUser().then((userDetailsMap) {
+                    if (consumerID.length == 6) {
+                      if (userDetailsMap["ConsumerIDList"]
+                          .contains(consumerID)) {
+                        var mobileNumber = userDetailsMap["MobileNumberList"][
+                            userDetailsMap["ConsumerIDList"]
+                                .indexOf(consumerID)];
+
+                        mobileNumber = mobileNumber.substring(8);
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return OtpPage(
+                            title: 'Home Page',
+                            phoneNumber: mobileNumber,
+                          );
+                        }));
+                      } else {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return const NoInternetPage();
+                        }));
+                      }
+                    } else {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const NoInternetPage();
+                      }));
+                    }
+                  });
                 },
                 child: const Text(
                   'Verify',
@@ -131,35 +155,9 @@ class UserLoginPage extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  checkUser().then((userDetailsMap) {
-                    if (consumerID.length == 6) {
-                      if (userDetailsMap["ConsumerIDList"]
-                          .contains(consumerID)) {
-                        var mobileNumber = userDetailsMap["MobileNumberList"][
-                            userDetailsMap["ConsumerIDList"]
-                                .indexOf(consumerID)];
-
-                        mobileNumber = mobileNumber.substring(8);
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return OtpPage(
-                            title: 'Home Page',
-                            phoneNumber: mobileNumber,
-                          );
-                        }));
-                      } else {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return const NoInternetPage();
-                        }));
-                      }
-                    } else {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return const NoInternetPage();
-                      }));
-                    }
-                  });
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const MyApp();
+                  }));
                 },
                 child: const Text(
                   'Return To Login Page',

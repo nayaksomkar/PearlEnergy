@@ -49,8 +49,8 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                                 onPressed: () {
                                   Navigator.push(context,
@@ -73,14 +73,14 @@ class HomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(width: 145),
+                      const SizedBox(width: 110),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                                 onPressed: () {
                                   Navigator.push(context,
@@ -131,8 +131,8 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                                 onPressed: () {
                                   Navigator.push(context,
@@ -161,8 +161,8 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                               onPressed: () {
                                 // Add your code here
@@ -208,8 +208,8 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                                 onPressed: () {
                                   Navigator.push(context,
@@ -232,14 +232,14 @@ class HomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(width: 155),
+                      const SizedBox(width: 165),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: 80,
-                            width: 80,
+                            height: 75,
+                            width: 75,
                             child: IconButton(
                                 onPressed: () {
                                   showDialog(
