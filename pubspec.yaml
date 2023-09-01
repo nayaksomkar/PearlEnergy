@@ -83,8 +83,11 @@ flutter:
     - assets/images/Logo.png
     - assets/images/Icon.png
     - assets/images/IconTransparent.png
+    - assets/images/OSIApproved.png
     - assets/images/NoInternetConnection.jpg
+
     - assets/csv/Payments_and_Ussage/ABC8001.csv
+
     - assets/gif/PaymentDoneGIF.gif
     - assets/gif/CurrentUssage.gif
     - assets/gif/account.gif
@@ -95,6 +98,7 @@ flutter:
     - assets/gif/phone.gif
     - assets/gif/UssageHistory.gif
     - assets/gif/message.gif
+    - assets/gif/githublogo.gif
     
  
 

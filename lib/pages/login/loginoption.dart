@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pearlenergy/pages/abouttheproject.dart';
 import 'package:pearlenergy/pages/login/userloginpage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -49,8 +50,12 @@ class LoginOption extends StatelessWidget {
                 // Admin Login Button
                 TextButton(
                     onPressed: () {
-                      launch('https://github.com/nayaksomkar/PearlEnergy');
-                    },
+                    // Navigate to UserLoginPage when User Login button is pressed
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const abouttheproject(title: 'User Login');
+                    }));
+                  },
                     child: Text(
                       'About the Project',
                       style: TextStyle(
