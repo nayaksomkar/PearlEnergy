@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, unnecessary_string_interpolations, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sample/pages/homepage/Payments_and_Ussage/billamount.dart';
+import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/billamount.dart';
 
 class PaymentStatusPage extends StatefulWidget {
   const PaymentStatusPage({Key? key}) : super(key: key);

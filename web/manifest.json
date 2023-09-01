@@ -1,6 +1,6 @@
 {
-    "name": "sample",
-    "short_name": "sample",
+    "name": "pearlenergy",
+    "short_name": "pearlenergy",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

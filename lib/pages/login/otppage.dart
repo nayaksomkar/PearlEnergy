@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sample/pages/homepage/homepagelayout.dart';
+import 'package:pearlenergy/pages/homepage/homepagelayout.dart';
 
 class OtpPage extends StatelessWidget {
   // ignore: prefer_const_constructors_in_immutables

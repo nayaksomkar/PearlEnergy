@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:sample/pages/login/loginoption.dart';
+import 'package:pearlenergy/pages/login/loginoption.dart';
 
 class NewUserPage extends StatelessWidget {
   const NewUserPage({Key? key, required this.title}) : super(key: key);

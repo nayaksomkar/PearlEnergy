@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample/pages/login/loginoption.dart';
+import 'package:pearlenergy/pages/login/loginoption.dart';
 
 class NoInternetPage extends StatelessWidget {
   const NoInternetPage({super.key});
@@ -30,7 +30,7 @@ class NoInternetPage extends StatelessWidget {
                 }));
               },
               // ignore: prefer_const_constructors
-              child:  Text(
+              child: Text(
                 'Try Again',
                 // ignore: prefer_const_constructors
                 style: TextStyle(fontSize: 15),

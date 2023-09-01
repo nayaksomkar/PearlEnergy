@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sample/main.dart';
-import 'package:sample/pages/homepage/Payments_and_Ussage/paymenthistory.dart';
-import 'package:sample/pages/homepage/Payments_and_Ussage/paymentstatus.dart';
+import 'package:pearlenergy/main.dart';
+import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/paymenthistory.dart';
+import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/paymentstatus.dart';
 
 import 'Manage Account/accountdetails.dart';
 

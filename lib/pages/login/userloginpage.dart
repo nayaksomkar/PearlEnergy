@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sample/packages/csvfunctions.dart';
-import 'package:sample/pages/login/newuser.dart';
-import 'package:sample/pages/login/otpPage.dart';
-import 'package:sample/pages/nointernet.dart';
+import 'package:pearlenergy/packages/csvfunctions.dart';
+import 'package:pearlenergy/pages/login/newuser.dart';
+import 'package:pearlenergy/pages/login/otpPage.dart';
+import 'package:pearlenergy/pages/nointernet.dart';
 
 String consumerID = '';
 String mobileNumber = '';

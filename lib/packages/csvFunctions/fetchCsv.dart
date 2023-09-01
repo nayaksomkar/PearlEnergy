@@ -3,7 +3,7 @@
 import 'package:http/http.dart' as http;
 //import 'package:csv/csv.dart';
 
-String csvFileName = 'sample.csv';
+String csvFileName = 'pearlenergy.csv';
 String csvFilePath = '/nayaksomkar/PearlEnergy/master/assets/csv/';
 
 fetchCSVData() async {
@@ -20,7 +20,7 @@ fetchCSVData() async {
 
   for (final elements in temp) {
     final element = elements.split(',');
-   // print(element);
+    // print(element);
     tempList.add(element);
   }
   print('');
