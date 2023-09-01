@@ -62,21 +62,10 @@ class NewUserPage extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const LoginOption(title: 'LoginOption');
-                  }));
-                },
-                child: const Text(
-                  'Return To Login Page',
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
+              const Text('Contact us via'),
               const SizedBox(
                 height: 10,
               ),
-              const Text('Contact us via'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -166,7 +155,21 @@ class NewUserPage extends StatelessWidget {
                     ],
                   )
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const LoginOption(title: 'LoginOption');
+                  }));
+                },
+                child: const Text(
+                  'Return To Login Page',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
             ],
           ),
         ),

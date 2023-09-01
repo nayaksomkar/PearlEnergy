@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pearlenergy/pages/abouttheproject.dart';
 import 'package:pearlenergy/pages/login/userloginpage.dart';
 
-
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -13,13 +12,29 @@ class LoginOption extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            const Image(
-              image: AssetImage(
-                'assets/images/LogoTransparent.png',
-              ),
+            const SizedBox(
               height: 300,
               width: 300,
+              child: Image(
+                image: AssetImage(
+                  'assets/images/LogoTransparent.png',
+                ),
+                height: 800,
+                width: 800,
+              ),
             ),
+            TextButton(
+                onPressed: () {
+                  // Navigate to UserLoginPage when User Login button is pressed
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const AboutTheProject(title: 'User Login');
+                  }));
+                },
+                child: Text(
+                  'About the Project',
+                  style: TextStyle(
+                      fontSize: 14, color: Colors.white.withOpacity(0.7)),
+                )),
             const SizedBox(
               height: 150,
             ),
@@ -44,23 +59,8 @@ class LoginOption extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+
                 // Admin Login Button
-                TextButton(
-                    onPressed: () {
-                      // Navigate to UserLoginPage when User Login button is pressed
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return const AboutTheProject(title: 'User Login');
-                      }));
-                    },
-                    child: Text(
-                      'About the Project',
-                      style: TextStyle(
-                          fontSize: 14, color: Colors.white.withOpacity(0.7)),
-                    )),
               ],
             )
           ],
