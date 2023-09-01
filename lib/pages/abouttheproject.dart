@@ -24,12 +24,11 @@ class AboutTheProject extends StatelessWidget {
                 width: 200,
               ),
               const SizedBox(
-                height: 80,
+                height: 60,
               ),
-              const Text('"message"'),
-              const SizedBox(
-                height: 50,
-              ),
+              const Text('"To know more about the Project."'),
+              const Text(
+                  '"Check the Github Repository & Read the Open Source License"'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -39,8 +38,8 @@ class AboutTheProject extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 75,
-                        width: 75,
+                        height: 200,
+                        width: 200,
                         child: IconButton(
                           onPressed: () {
                             launch(
@@ -54,7 +53,7 @@ class AboutTheProject extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Check the Github repository',
+                        'Github Repository',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 14, color: Colors.white.withOpacity(0.7)),
@@ -62,15 +61,15 @@ class AboutTheProject extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    width: 40,
+                    width: 10,
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 75,
-                        width: 75,
+                        height: 200,
+                        width: 200,
                         child: IconButton(
                           onPressed: () {
                             launch(
@@ -84,7 +83,7 @@ class AboutTheProject extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Read the OpenSource License',
+                        'OpenSource License',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 14, color: Colors.white.withOpacity(0.7)),
