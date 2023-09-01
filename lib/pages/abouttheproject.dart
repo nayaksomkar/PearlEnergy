@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:pearlenergy/pages/login/loginoption.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class NewUserPage extends StatelessWidget {
-  const NewUserPage({Key? key, required this.title}) : super(key: key);
+class AboutTheProject extends StatelessWidget {
+  const AboutTheProject({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -26,26 +26,10 @@ class NewUserPage extends StatelessWidget {
               const SizedBox(
                 height: 80,
               ),
-              const Text(
-                  "For site verification and connectiongive us a call or Email."),
+              const Text('"message"'),
               const SizedBox(
                 height: 50,
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const LoginOption(title: 'LoginOption');
-                  }));
-                },
-                child: const Text(
-                  'Return To Login Page',
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('Contact us via'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -59,7 +43,8 @@ class NewUserPage extends StatelessWidget {
                         width: 75,
                         child: IconButton(
                           onPressed: () {
-                            // Add your code here
+                            launch(
+                                'https://github.com/nayaksomkar/PearlEnergy');
                           },
                           icon: Image.asset(
                             'assets/gif/githublogo.gif',
@@ -77,7 +62,7 @@ class NewUserPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    width: 10,
+                    width: 40,
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +73,8 @@ class NewUserPage extends StatelessWidget {
                         width: 75,
                         child: IconButton(
                           onPressed: () {
-                            // Add your code here
+                            launch(
+                                'https://github.com/nayaksomkar/PearlEnergy/blob/master/LICENSE');
                           },
                           icon: Image.asset(
                             'assets/images/OSIApproved.png',
@@ -106,7 +92,21 @@ class NewUserPage extends StatelessWidget {
                     ],
                   ),
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const LoginOption(title: 'LoginOption');
+                  }));
+                },
+                child: const Text(
+                  'Return To Login Page',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
             ],
           ),
         ),
