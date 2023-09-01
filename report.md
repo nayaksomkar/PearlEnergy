@@ -20,6 +20,6 @@
 - [ ] Also add possible warnings.
 - [x] Add Phone and Call icon at the new user page.
 - [ ] Add Go Back Button on every page.
-- [ ] Add warning menu boxes.
+- [x] Add warning menu boxes with the logout button.
 
 

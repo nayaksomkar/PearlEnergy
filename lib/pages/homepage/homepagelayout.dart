@@ -242,10 +242,41 @@ class HomePage extends StatelessWidget {
                             width: 80,
                             child: IconButton(
                                 onPressed: () {
-                                  Navigator.push(context,
-                                      MaterialPageRoute(builder: (context) {
-                                    return const MyApp();
-                                  }));
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        title: const Center(
+                                          child: Text(
+                                            'WARNING',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        content: const Text(
+                                            'YOU WILL BE REDIRECTED TO THE LOGIN PAGE.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () {
+                                              Navigator.push(context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) {
+                                                return const MyApp();
+                                              }));
+                                            },
+                                            child: const Text('OK'),
+                                          ),
+                                          TextButton(
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                            child: const Text('CANCEL'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
                                 },
                                 icon: Image.asset(
                                   'assets/gif/logout.gif',
