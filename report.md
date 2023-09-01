@@ -2,7 +2,7 @@
 
 ### REGULAR
 ##### BUGS TO BE FIXED
-- [ ] In smartphone some icons aren't visible, change the icons with image icons.
+- [x] In smartphone some icons aren't visible, change the icons with image icons.
 
 
 ##### CHANGES MADE SO FAR
