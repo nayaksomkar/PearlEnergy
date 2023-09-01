@@ -93,14 +93,7 @@ flutter:
     - assets/gif/UssageHistory.gif
     - assets/gif/message.gif
     
-  fonts:
-    - family: MaterialIcons
-      fonts:
-        - asset: fonts/MaterialIcons-Regular.ttf
-    - family: CupertinoIcons
-      fonts:
-        - asset: fonts/CupertinoIcons.ttf
-    
+ 
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

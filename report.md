@@ -1,6 +1,4 @@
-## MON, 31 AUG 2023
 
-### REGULAR
 ##### BUGS TO BE FIXED
 - [x] In smartphone some icons aren't visible, change the icons with image icons.
 
@@ -21,24 +19,7 @@
 - [ ] Add a timer screen before showing that "Payment Done GIF".
 - [ ] Also add possible warnings.
 - [x] Add Phone and Call icon at the new user page.
-
-### BACKLOGS
-- [ ] NULL
-
-
-## TUE, 01 SEP 2023
-### REGULAR
-
-##### BUGS TO BE FIXED
-- [ ] NULL
-
-##### CHANGES MADE SO FAR
-- [ ] NULL
-##### FEATURES TO BE ADDED
-- [ ] NULL
-
-### BACKLOG
-- [ ] NULL
-
+- [ ] Add Go Back Button on every page.
+- [ ] Add warning menu boxes.
 
 

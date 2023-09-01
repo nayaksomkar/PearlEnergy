@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(width: 100),
+                      const SizedBox(width: 145),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
