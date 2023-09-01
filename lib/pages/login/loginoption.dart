@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pearlenergy/pages/login/userloginpage.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LoginOption extends StatelessWidget {
   const LoginOption({Key? key, required this.title}) : super(key: key);
@@ -46,19 +47,15 @@ class LoginOption extends StatelessWidget {
                   height: 20,
                 ),
                 // Admin Login Button
-                ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                    foregroundColor: MaterialStatePropertyAll(Colors.black),
-                  ),
-                  onPressed: () {
-                    // Add functionality for Admin Login button if needed
-                  },
-                  child: const Text(
-                    'Admin Login',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
+                TextButton(
+                    onPressed: () {
+                      launch('https://github.com/nayaksomkar/PearlEnergy');
+                    },
+                    child: Text(
+                      'About the Project',
+                      style: TextStyle(
+                          fontSize: 14, color: Colors.white.withOpacity(0.7)),
+                    )),
               ],
             )
           ],
