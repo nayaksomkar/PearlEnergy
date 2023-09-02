@@ -22,4 +22,7 @@
 - [ ] Add Go Back Button on every page.
 - [x] Add warning menu boxes with the logout button.
 
-
+###### AIM & PLANS
+- [ ] To fix GUI errors - different resolution for different platforms.
+- [ ] Check is the Program doing what it's supposed to do?.
+- [ ] Add Basic features then go for major ones.
