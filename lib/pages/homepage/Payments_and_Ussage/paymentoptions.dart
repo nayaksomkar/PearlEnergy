@@ -78,25 +78,58 @@ class _PaymentOptionPageState extends State<PaymentOptionPage> {
                                   height: 15,
                                 ),
                                 Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    IconButton(
-                                      iconSize: 50.0,
-                                      icon: Image.asset(
-                                          'assets/images/UPIlogo.png'),
-                                      onPressed: () {
-                                        // Add your UPI payment logic here
-                                      },
+                                    Column(
+                                      children: [
+                                        IconButton(
+                                          iconSize: 100,
+                                          icon: Image.asset(
+                                            'assets/images/UPIlogo.png',
+                                            // height: 150,
+                                            // width: 150,
+                                          ),
+                                          onPressed: () {
+                                            // Add your UPI payment logic here
+                                          },
+                                        ),
+                                        Text(
+                                          'Payment using UPI',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.white
+                                                  .withOpacity(0.7)),
+                                        ),
+                                      ],
                                     ),
-                                    IconButton(
-                                      iconSize: 50.0,
-                                      icon: Image.asset(
-                                          'assets/gif/creditcard.gif'),
-                                      onPressed: () {
-                                        // Add your card payment logic here
-                                      },
+                                    SizedBox(
+                                      width: 10,
                                     ),
+                                    Column(
+                                      children: [
+                                        IconButton(
+                                          iconSize: 100,
+                                          icon: Image.asset(
+                                            'assets/images/creditcard.jpg',
+                                            // height: 800,
+                                            // width: 800,
+                                          ),
+                                          onPressed: () {
+                                            // Add your card payment logic here
+                                          },
+                                        ),
+                                        Text(
+                                          'Payment using Card',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.white
+                                                  .withOpacity(0.7)),
+                                        )
+                                      ],
+                                    )
                                   ],
                                 ),
                               ],
@@ -111,7 +144,7 @@ class _PaymentOptionPageState extends State<PaymentOptionPage> {
               ),
             ),
             SizedBox(
-              height: 230,
+              height: 100,
             ),
             const Image(
               image: AssetImage(

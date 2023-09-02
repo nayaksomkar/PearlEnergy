@@ -87,6 +87,7 @@ flutter:
     - assets/images/UPIlogo.png
 
     - assets/images/NoInternetConnection.jpg
+    - assets/images/creditcard.jpg
 
     - assets/csv/Payments_and_Ussage/ABC8001.csv
 
@@ -102,7 +103,7 @@ flutter:
     - assets/gif/message.gif
     - assets/gif/githublogo.gif
     - assets/gif/wallet.gif
-    - assets/gif/creditcard.gif
+
     
  
 

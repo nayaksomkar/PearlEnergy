@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/paymentdone.dart';
+import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/paymentoptions.dart';
 
 class AmountPage extends StatefulWidget {
   const AmountPage({Key? key}) : super(key: key);
@@ -81,7 +82,7 @@ class _AmountPageState extends State<AmountPage> {
                                     onPressed: () {
                                       Navigator.push(context,
                                           MaterialPageRoute(builder: (context) {
-                                        return const PaymentDonePage();
+                                        return const PaymentOptionPage();
                                       }));
                                     },
                                     child: Text(
