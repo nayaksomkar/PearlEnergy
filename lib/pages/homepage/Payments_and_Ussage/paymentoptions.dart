@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:pearlenergy/pages/homepage/Payments_and_Ussage/paymentdone.dart';
 
-class AmountPage extends StatefulWidget {
-  const AmountPage({Key? key}) : super(key: key);
+class PaymentOptionPage extends StatefulWidget {
+  const PaymentOptionPage({Key? key}) : super(key: key);
 
   @override
-  _AmountPageState createState() => _AmountPageState();
+  _PaymentOptionPageState createState() => _PaymentOptionPageState();
 }
 
-class _AmountPageState extends State<AmountPage> {
+class _PaymentOptionPageState extends State<PaymentOptionPage> {
 // Initial Selected Value
   // Initial Selected Value
   String consumerName = 'Akshay Sha'.toUpperCase();
@@ -77,19 +77,28 @@ class _AmountPageState extends State<AmountPage> {
                                 SizedBox(
                                   height: 15,
                                 ),
-                                ElevatedButton(
-                                    onPressed: () {
-                                      Navigator.push(context,
-                                          MaterialPageRoute(builder: (context) {
-                                        return const PaymentDonePage();
-                                      }));
-                                    },
-                                    child: Text(
-                                      'Go for Payment Options',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15),
-                                    )),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    IconButton(
+                                      iconSize: 50.0,
+                                      icon: Image.asset(
+                                          'assets/images/UPIlogo.png'),
+                                      onPressed: () {
+                                        // Add your UPI payment logic here
+                                      },
+                                    ),
+                                    IconButton(
+                                      iconSize: 50.0,
+                                      icon: Image.asset(
+                                          'assets/gif/creditcard.gif'),
+                                      onPressed: () {
+                                        // Add your card payment logic here
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ],
                             )),
                         SizedBox(
