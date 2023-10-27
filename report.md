@@ -26,3 +26,4 @@
 - [ ] To fix GUI errors - different resolution for different platforms.
 - [ ] Check is the Program doing what it's supposed to do?.
 - [ ] Add Basic features then go for major ones.
+- [ ] Replace "OTP" with the password as "OTP" section is not making sense anymore or just make the "OTP" thing functional.

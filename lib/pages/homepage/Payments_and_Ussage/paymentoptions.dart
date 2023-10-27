@@ -63,77 +63,59 @@ class _PaymentOptionPageState extends State<PaymentOptionPage> {
                           height: 15,
                         ),
                         Align(
-                            alignment: Alignment.center,
+                            // alignment: Alignment.center,
                             child: Column(
+                          children: [
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Column(
+                              //mainAxisAlignment: MainAxisAlignment.center,
+                              //crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  '$bill',
-                                  textAlign: TextAlign.start,
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
-                                ),
-                                SizedBox(
-                                  height: 15,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                Column(
                                   children: [
-                                    Column(
-                                      children: [
-                                        IconButton(
-                                          iconSize: 100,
-                                          icon: Image.asset(
-                                            'assets/images/UPIlogo.png',
-                                            // height: 150,
-                                            // width: 150,
-                                          ),
-                                          onPressed: () {
-                                            // Add your UPI payment logic here
-                                          },
-                                        ),
-                                        Text(
-                                          'Payment using UPI',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              color: Colors.white
-                                                  .withOpacity(0.7)),
-                                        ),
-                                      ],
+                                    IconButton(
+                                      iconSize: 100,
+                                      icon: Image.asset(
+                                        'assets/images/UPIlogo.png',
+                                      ),
+                                      onPressed: () {
+                                        // Add your UPI payment logic here
+                                      },
                                     ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Column(
-                                      children: [
-                                        IconButton(
-                                          iconSize: 100,
-                                          icon: Image.asset(
-                                            'assets/images/creditcard.jpg',
-                                            // height: 800,
-                                            // width: 800,
-                                          ),
-                                          onPressed: () {
-                                            // Add your card payment logic here
-                                          },
-                                        ),
-                                        Text(
-                                          'Payment using Card',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              color: Colors.white
-                                                  .withOpacity(0.7)),
-                                        )
-                                      ],
-                                    )
+                                    Text('Payment using UPI'),
                                   ],
                                 ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Column(
+                                  children: [
+                                    IconButton(
+                                      iconSize: 100,
+                                      icon: Image.asset(
+                                        'assets/images/creditcard.jpg',
+                                        // height: 800,
+                                        // width: 800,
+                                      ),
+                                      onPressed: () {
+                                        // Add your card payment logic here
+                                      },
+                                    ),
+                                    Text(
+                                      'Payment using Card',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          color: Colors.white.withOpacity(0.7)),
+                                    )
+                                  ],
+                                )
                               ],
-                            )),
+                            ),
+                          ],
+                        )),
                         SizedBox(
                           height: 20,
                         ),
