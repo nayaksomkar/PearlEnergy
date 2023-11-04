@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pearlenergy/pages/abouttheproject.dart';
 import 'package:pearlenergy/pages/login/userloginpage.dart';
 
 class LoginOption extends StatelessWidget {
@@ -23,18 +22,6 @@ class LoginOption extends StatelessWidget {
                 width: 800,
               ),
             ),
-            TextButton(
-                onPressed: () {
-                  // Navigate to UserLoginPage when User Login button is pressed
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const AboutTheProject(title: 'User Login');
-                  }));
-                },
-                child: Text(
-                  'About the Project',
-                  style: TextStyle(
-                      fontSize: 14, color: Colors.white.withOpacity(0.7)),
-                )),
             const SizedBox(
               height: 150,
             ),

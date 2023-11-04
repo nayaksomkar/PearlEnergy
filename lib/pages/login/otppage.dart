@@ -6,9 +6,8 @@ import 'package:pearlenergy/pages/homepage/homepagelayout.dart';
 
 class OtpPage extends StatelessWidget {
   // ignore: prefer_const_constructors_in_immutables
-  OtpPage({super.key, required this.title, required this.phoneNumber});
+  OtpPage({super.key, required this.title});
   final String title;
-  final String phoneNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,7 @@ class OtpPage extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                    '(OTP) has been sent to a phone number ending with "**$phoneNumber"'),
+                    '(OTP) has been sent to a phone number ending with "**991"'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

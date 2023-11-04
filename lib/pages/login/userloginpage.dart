@@ -4,7 +4,6 @@ import 'package:pearlenergy/main.dart';
 import 'package:pearlenergy/pages/login/newuser.dart';
 import 'package:pearlenergy/pages/login/otpPage.dart';
 
-
 String consumerID = '';
 String mobileNumber = '';
 
@@ -45,7 +44,16 @@ class UserLoginPage extends StatelessWidget {
                 inputFormatters: <TextInputFormatter>[
                   FilteringTextInputFormatter.allow(RegExp('[a-zA-Z0-9]')),
                 ],
-                onChanged: (value) {},
+                onChanged: (value) {
+                  if (value.length == 6) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return OtpPage(
+                        title: 'New User',
+                      );
+                    }));
+                  }
+                },
               ),
               const SizedBox(
                 height: 5,
@@ -62,7 +70,6 @@ class UserLoginPage extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return OtpPage(
                       title: 'New User',
-                      phoneNumber: '',
                     );
                   }));
                 },
